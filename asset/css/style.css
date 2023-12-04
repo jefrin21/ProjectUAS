@@ -10,3 +10,68 @@
   .tab-content > div:target {
     display: block;
   }
+
+  .flex-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-span: none;
+    /* flex-direction: column; */
+  }
+
+
+
+  .container{
+    background-color: #282828;
+  }
+
+
+  .img-container {
+    position: relative;
+
+  }
+
+  .img-text {
+    position: absolute;
+    top:40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .deskripsiMaps{
+    color: white;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .cardzi{
+    height: 100%;
+  }
+
+  .imgsize{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    padding : 5px;
+  }
+
+  /* #itemscsgo img{
+    height: 15000px;
+  } */
+
+  .sizeimg{
+    width: 100%;
+  }
+  
+  .sizemid{
+    width: 60%;
+  }
+  
+  .boxShadow{
+    -webkit-box-shadow: 67px 31px 57px 6px rgba(0,0,0,.3);
+box-shadow: 67px 31px 57px 6px rgba(0,0,0,.3);
+
+  }
