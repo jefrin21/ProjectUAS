@@ -21,6 +21,34 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <style>
+      #cardContainer {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        max-height: 610px;
+        padding: 10px;
+      }
+
+      #cardContainer2 {
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        max-height: 610px;
+        padding: 10px;
+      }
+
+      ::-webkit-scrollbar {
+        width: 7px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #373c42;
+        border-radius: 100vw;
+        margin-top: 25px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#642bff, #ff22e6);
+        border-radius: 10px;
+      }
+    </style>
   </head>
   <body class="bg-dark">
     <!-- Navbar/Header -->
@@ -68,6 +96,7 @@
                 id="panelsStayOpen-collapseOne"
                 class="accordion-collapse collapse show"
               ></div>
+              <div class="row bagian-atas" id="cardContainer4"></div>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">
                   <i class="fa fa-search" aria-hidden="true"></i>

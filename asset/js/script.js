@@ -49,6 +49,21 @@ document.addEventListener("DOMContentLoaded", function () {
       alt: "Card 9 Image",
       text: "Some quick example text for Card 9.",
     },
+    {
+      imageSrc: "path/to/your/image10.jpg",
+      alt: "Card 10 Image",
+      text: "Some quick example text for Card 9.",
+    },
+    {
+      imageSrc: "path/to/your/image11.jpg",
+      alt: "Card 11 Image",
+      text: "Some quick example text for Card 9.",
+    },
+    {
+      imageSrc: "path/to/your/image12.jpg",
+      alt: "Card 12 Image",
+      text: "Some quick example text for Card 9.",
+    },
     // Add more card data as needed
   ];
 
@@ -116,5 +131,114 @@ dropdowns.forEach((dropdown) => {
       });
       option.classList.add("active");
     });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cardContainer = document.getElementById("cardContainer2");
+  const cardContainer2 = document.getElementById("cardContainer4");
+
+  // Sample card data
+  const cardData = [
+    {
+      imageSrc: "path/to/your/image1.jpg",
+      alt: "Card 1 Image",
+      text: "Some quick example text for Card 1.",
+    },
+    {
+      imageSrc: "path/to/your/image2.jpg",
+      alt: "Card 2 Image",
+      text: "Some quick example text for Card 2.",
+    },
+    {
+      imageSrc: "path/to/your/image3.jpg",
+      alt: "Card 3 Image",
+      text: "Some quick example text for Card 3.",
+    },
+    {
+      imageSrc: "path/to/your/image4.jpg",
+      alt: "Card 4 Image",
+      text: "Some quick example text for Card 4.",
+    },
+    {
+      imageSrc: "path/to/your/image5.jpg",
+      alt: "Card 5 Image",
+      text: "Some quick example text for Card 5.",
+    },
+    {
+      imageSrc: "path/to/your/image6.jpg",
+      alt: "Card 6 Image",
+      text: "Some quick example text for Card 6.",
+    },
+    {
+      imageSrc: "path/to/your/image7.jpg",
+      alt: "Card 7 Image",
+      text: "Some quick example text for Card 7.",
+    },
+    {
+      imageSrc: "path/to/your/image8.jpg",
+      alt: "Card 8 Image",
+      text: "Some quick example text for Card 8.",
+    },
+    {
+      imageSrc: "path/to/your/image9.jpg",
+      alt: "Card 9 Image",
+      text: "Some quick example text for Card 9.",
+    },
+    {
+      imageSrc: "path/to/your/image10.jpg",
+      alt: "Card 10 Image",
+      text: "Some quick example text for Card 9.",
+    },
+    {
+      imageSrc: "path/to/your/image11.jpg",
+      alt: "Card 11 Image",
+      text: "Some quick example text for Card 9.",
+    },
+    {
+      imageSrc: "path/to/your/image12.jpg",
+      alt: "Card 12 Image",
+      text: "Some quick example text for Card 9.",
+    },
+    // Add more card data as needed
+  ];
+
+  cardData.forEach((card) => {
+    const cardColumn = document.createElement("div");
+    cardColumn.className = "col-4 mt-3";
+
+    const cardElement = document.createElement("div");
+    cardElement.className = "card";
+
+    const cardImage = document.createElement("img");
+    cardImage.src = card.imageSrc;
+    cardImage.alt = card.alt;
+    cardImage.className = "card-img-top";
+
+    const cardBody = document.createElement("div");
+    cardBody.className = "card-body";
+
+    const cardText = document.createElement("p");
+    cardText.className = "card-text";
+    cardText.textContent = card.text;
+
+    const cardButton = document.createElement("a");
+    cardButton.href = "#";
+    cardButton.className = "btn btn-primary";
+    cardButton.textContent = "Go somewhere";
+
+    // Add an event listener to the cardButton
+    cardButton.addEventListener("click", function () {
+      // Move the card from cardContainer to cardContainer2
+      cardColumn.remove(); // Remove from cardContainer
+      cardContainer2.appendChild(cardColumn); // Append to cardContainer2
+    });
+
+    cardBody.appendChild(cardText);
+    cardBody.appendChild(cardButton);
+    cardElement.appendChild(cardImage);
+    cardElement.appendChild(cardBody);
+    cardColumn.appendChild(cardElement);
+    cardContainer.appendChild(cardColumn);
   });
 });
