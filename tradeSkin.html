@@ -120,28 +120,29 @@
               <div class="btn btn-primary w-100 mb-3">Trade</div>
               <div class="dropdown">
                 <div class="select">
-                  <span class="selected">Figma</span>
+                  <span class="selected">Type</span>
                   <div class="caret"></div>
                 </div>
                 <ul class="menu">
-                  <li>Framer</li>
-                  <li>Sketch</li>
-                  <li>Invision Studio</li>
-                  <li class="active">Figma</li>
-                  <li>Test</li>
+                  <li>Pistols</li>
+                  <li>Mid-tier</li>
+                  <li>Rifles</li>
+                  <li class="active">Knives</li>
+                  <li>Gkives</li>
                 </ul>
               </div>
               <div class="dropdown">
                 <div class="select">
-                  <span class="selected">Facebook</span>
+                  <span class="selected">Rarity</span>
                   <div class="caret"></div>
                 </div>
                 <ul class="menu">
-                  <li class="active">Facebook</li>
-                  <li>Instagram</li>
-                  <li>Twitter</li>
-                  <li>Linkedin</li>
-                  <li>Tik Tok</li>
+                  <li class="filter-box consumer">Consumer Grade</li>
+                  <li class="filter-box industrial">Industrial Grade</li>
+                  <li class="filter-box mil-spex">Mil-Spec Grade</li>
+                  <li class="filter-box restricted">Restricted</li>
+                  <li class="filter-box classified">Classified</li>
+                  <li class="filter-box covert">Covert</li>
                 </ul>
               </div>
             </div>
@@ -185,6 +186,88 @@
       </div>
     </section>
 
+    <div class="slider-container">
+      <div class="slide">
+        <div class="cards">
+          <div class="card-infos">
+            <div class="card-titles">Hie</div>
+            <div class="card-details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis beatae nisi soluta ex animi aperiam iste voluptatem,
+              voluptatibus impedit rem natus doloribus sed ullam provident sunt
+              odit eaque excepturi modi.
+            </div>
+          </div>
+          <div class="card-socials">
+            <ul>
+              <li><i class="fa fa-comment-o" aria-hidden="true"></i></li>
+              <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+              <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="cards">
+          <div class="card-infos">
+            <div class="card-titles">Hie</div>
+            <div class="card-details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis beatae nisi soluta ex animi aperiam iste voluptatem,
+              voluptatibus impedit rem natus doloribus sed ullam provident sunt
+              odit eaque excepturi modi.
+            </div>
+          </div>
+          <div class="card-socials">
+            <ul>
+              <li><i class="fa fa-comment-o" aria-hidden="true"></i></li>
+              <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+              <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="cards">
+          <div class="card-infos">
+            <div class="card-titles">Hie</div>
+            <div class="card-details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis beatae nisi soluta ex animi aperiam iste voluptatem,
+              voluptatibus impedit rem natus doloribus sed ullam provident sunt
+              odit eaque excepturi modi.
+            </div>
+          </div>
+          <div class="card-socials">
+            <ul>
+              <li><i class="fa fa-comment-o" aria-hidden="true"></i></li>
+              <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+              <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="cards">
+          <div class="card-infos">
+            <div class="card-titles">Hie</div>
+            <div class="card-details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis beatae nisi soluta ex animi aperiam iste voluptatem,
+              voluptatibus impedit rem natus doloribus sed ullam provident sunt
+              odit eaque excepturi modi.
+            </div>
+          </div>
+          <div class="card-socials">
+            <ul>
+              <li><i class="fa fa-comment-o" aria-hidden="true"></i></li>
+              <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+              <li><i class="fa fa-share-alt" aria-hidden="true"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer -->
 
     <section id="footer">
@@ -207,6 +290,24 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider-container").slick({
+          slidesToShow: 3, // Number of slides to show at a time
+          slidesToScroll: 1, // Number of slides to scroll at a time
+          arrows: false, // Hide default navigation arrows
+          dots: true, // Show navigation dots
+        });
+      });
+    </script>
+
     <script src="./asset/js/script.js"></script>
   </body>
 </html>

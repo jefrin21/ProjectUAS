@@ -88,6 +88,7 @@
 
 .active {
   background: #23242a;
+  color: #bbb9c7 !important;
 }
 
 .menu-open {
@@ -131,3 +132,135 @@
 .cardContiner{
   padding-top: 150px;
 }
+
+.card-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 15px;
+}
+
+.cards {
+  min-width: 275px;
+  width: 275px;
+
+  margin: 15px;
+  border-radius: 7px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(128, 128, 128, 0.85);
+  position: relative;
+  transition: 0.2s all linear;
+}
+
+.card-socials {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+      transition: all 0.1s linear;
+    }
+  }
+}
+
+.card-images {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.card-infos {
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  .card-titles {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .card-details {
+    line-height: 1.5em;
+    font-size: 14px;
+    height: 200px;
+    overflow: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: center top;
+    transition: 0.35s all linear;
+    transition-delay: 0.1s;
+  }
+}
+
+.cards:hover {
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.7);
+
+  .card-infos {
+    .card-title {
+      box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.7);
+      transition: 0.3s all linear;
+    }
+
+    .card-details {
+      opacity: 1;
+      box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.7);
+      transition: 0.35s all linear;
+      transition-delay: 0.1s;
+      transform: scaleY(1);
+    }
+  }
+}
+
+
+.consumer {
+  color: #bbb9c7;
+}
+
+.industrial{
+  color: #5e98d9;
+}
+
+.mil-spex{
+  color: #5169f7;
+}
+
+.restricted{
+  color: #a574ff;
+}
+
+.classified{
+  color: #e050f0;
+}
+
+.covert{
+  color: #f26767;
+}
+

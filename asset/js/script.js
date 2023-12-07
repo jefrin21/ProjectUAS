@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cardContainer = document.getElementById("cardContainer");
-  const cardContainer2 = document.getElementById("cardContainer3");
+  const cardContainer3 = document.getElementById("cardContainer3");
 
   // Sample card data
   const cardData = [
@@ -91,11 +91,18 @@ document.addEventListener("DOMContentLoaded", function () {
     cardButton.className = "btn btn-primary";
     cardButton.textContent = "Go somewhere";
 
-    // Add an event listener to the cardButton
     cardButton.addEventListener("click", function () {
-      // Move the card from cardContainer to cardContainer2
-      cardColumn.remove(); // Remove from cardContainer
-      cardContainer2.appendChild(cardColumn); // Append to cardContainer2
+      const currentContainer = this.closest(".row"); // Get the current container
+
+      if (currentContainer === cardContainer) {
+        // Move the card from cardContainer to cardContainer3
+        cardColumn.remove(); // Remove from cardContainer
+        cardContainer3.appendChild(cardColumn); // Append to cardContainer3
+      } else if (currentContainer === cardContainer3) {
+        // Move the card back from cardContainer3 to cardContainer
+        cardColumn.remove(); // Remove from cardContainer3
+        cardContainer.appendChild(cardColumn); // Append to cardContainer
+      }
     });
 
     cardBody.appendChild(cardText);
@@ -136,7 +143,7 @@ dropdowns.forEach((dropdown) => {
 
 document.addEventListener("DOMContentLoaded", function () {
   const cardContainer = document.getElementById("cardContainer2");
-  const cardContainer2 = document.getElementById("cardContainer4");
+  const cardContainer4 = document.getElementById("cardContainer4");
 
   // Sample card data
   const cardData = [
@@ -227,11 +234,18 @@ document.addEventListener("DOMContentLoaded", function () {
     cardButton.className = "btn btn-primary";
     cardButton.textContent = "Go somewhere";
 
-    // Add an event listener to the cardButton
     cardButton.addEventListener("click", function () {
-      // Move the card from cardContainer to cardContainer2
-      cardColumn.remove(); // Remove from cardContainer
-      cardContainer2.appendChild(cardColumn); // Append to cardContainer2
+      const currentContainer = this.closest(".row"); // Get the current container
+
+      if (currentContainer === cardContainer) {
+        // Move the card from cardContainer to cardContainer3
+        cardColumn.remove(); // Remove from cardContainer
+        cardContainer4.appendChild(cardColumn); // Append to cardContainer3
+      } else if (currentContainer === cardContainer4) {
+        // Move the card back from cardContainer3 to cardContainer
+        cardColumn.remove(); // Remove from cardContainer3
+        cardContainer.appendChild(cardColumn); // Append to cardContainer
+      }
     });
 
     cardBody.appendChild(cardText);
@@ -241,4 +255,39 @@ document.addEventListener("DOMContentLoaded", function () {
     cardColumn.appendChild(cardElement);
     cardContainer.appendChild(cardColumn);
   });
+});
+
+$(document).ready(function () {
+  $(".menu .filter-box").click(function () {
+    $(this).toggleClass("active");
+  });
+});
+
+const navbarMenu = document.getElementById("menu");
+const burgerMenu = document.getElementById("burger");
+const headerMenu = document.getElementById("header");
+
+// Toggle Navbar Menu on Burger Click
+if (burgerMenu && navbarMenu) {
+  burgerMenu.addEventListener("click", () => {
+    burgerMenu.classList.toggle("is-active");
+    navbarMenu.classList.toggle("is-active");
+  });
+}
+
+// Closed Navbar Menu on Links Click
+document.querySelectorAll(".menu-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    burgerMenu.classList.remove("is-active");
+    navbarMenu.classList.remove("is-active");
+  });
+});
+
+// Fixed Navbar Menu on Window Resize
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 769) {
+    if (navbarMenu.classList.contains("is-active")) {
+      navbarMenu.classList.remove("is-active");
+    }
+  }
 });
