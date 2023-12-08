@@ -131,6 +131,7 @@ body {
   font-family: Inter, system-ui;
   -webkit-font-smoothing: antialiased;
 }
+
 .rarity-skin-consumer {
   --content-color: var(--color-consumer-100);
   --background-color: var(--color-shape-purple-400-opacity-10);
@@ -168,9 +169,9 @@ body {
 
 .text-skin1{
   font-size: var(--frontly-headline-x-sm-font-size);
-    font-weight: var(--frontly-headline-x-sm-font-weight);
-    line-height: var(--frontly-headline-x-sm-line-height);
-    letter-spacing: var(--frontly-headline-x-sm-letter-spacing);
+  font-weight: var(--frontly-headline-x-sm-font-weight);
+  line-height: var(--frontly-headline-x-sm-line-height);
+  letter-spacing: var(--frontly-headline-x-sm-letter-spacing);
 }
 
 .skin-startrak {
@@ -431,12 +432,22 @@ body {
 
 .rekomendasi-terbaik { 
   grid-area: rekomendasi-terbaik;
-  background-color: var(--color-graybase-600);
-  border-radius: 6px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  color: white;
+ }
+
+ .rekomendasi-header {
+  font-size: 20px;
+  line-height: 22px;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+  margin-bottom: 24px;
  }
 
  .bagian-rekomendasi-item {  display: grid;
-  grid-template-columns: 208px 220px 214px 214px 214px 214px;
+  grid-template-columns: 214px 214px 214px 214px 214px 214px;
   grid-template-rows: 30px 212px 216px;
   gap: 1em 1em;
   grid-auto-flow: row;
@@ -455,21 +466,89 @@ body {
 
 .good-item-1 { 
   grid-area: good-item-1; 
-
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.good-card-img{
+  position: absolute;
+  width: 73.3945%;
+  height: 73.3945%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: 50%/contain no-repeat;
+  margin-top: -25px;
+}
+
+.good-card-bottom {
+  width: 100%;
+  position: absolute;
+  padding: 8px;
+  left: 0;
+  bottom: 0;
+}
+
+.good-info-sell {
+  margin-bottom: -2px;
+}
+
+.font12 {
+  color: #c2c2c2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 17px;
 }
 
 .good-item-2 { 
   grid-area: good-item-2; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.user-price {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ebebf5;
+  text-align: right; /* Menggunakan text-align untuk mengatur ke kanan */
+  padding-right: 25px;
 }
 
 .good-item-3 { 
-  grid-area: good-item-3;
+  grid-area: good-item-3; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 
@@ -477,52 +556,133 @@ body {
   grid-area: good-item-4; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .good-item-5 { 
   grid-area: good-item-5; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .good-item-6 { 
   grid-area: good-item-6; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .good-item-7 { 
   grid-area: good-item-7; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .good-item-8 { 
   grid-area: good-item-8; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .good-item-9 { 
-  grid-area: good-item-9;
+  grid-area: good-item-9; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .good-item-10 { 
   grid-area: good-item-10; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .good-item-11 { 
   grid-area: good-item-11; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .good-item-12 { 
   grid-area: good-item-12; 
   background-color: var(--color-graybase-600);
   border-radius: 6px;
+  letter-spacing: .3px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.good-card-rarity {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  display: inline-block;
 }
