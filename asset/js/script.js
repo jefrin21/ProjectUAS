@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cardButton = document.createElement("a");
     cardButton.href = "#";
-    cardButton.className = "btn btn-primary";
+    cardButton.className = "btn btn-warning";
     cardButton.textContent = "Go somewhere";
 
     cardButton.addEventListener("click", function () {
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cardButton = document.createElement("a");
     cardButton.href = "#";
-    cardButton.className = "btn btn-primary";
+    cardButton.className = "btn btn-warning";
     cardButton.textContent = "Go somewhere";
 
     cardButton.addEventListener("click", function () {
