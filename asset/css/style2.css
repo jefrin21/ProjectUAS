@@ -372,7 +372,7 @@ body {
 .addtotrade {
   grid-area: simpan-trade;
   color: black;
-  background: var(--color-consumer-100);
+  background: linear-gradient(45deg,#ffd700, #ffffff, #ffd700, #ffffff);
   font-size: 24px;
   font-weight: 550;
   line-height: 16px;
