@@ -472,7 +472,6 @@
 
   .footer-txt-set{
     position: absolute;
-    bottom: 0;
   }
 
  #footer ul{
@@ -493,7 +492,7 @@
   border: none;
  }
 
- #footer a:hover{
+ #footer .footer-info:hover{
   background-color: #b9b9b9;
   font-size: 20px;
   border-radius: 20px;
@@ -557,7 +556,7 @@
           font-size: 9px;
           margin-left: 10px;
           text-align: center;
-          left: 50%;
+          right: 7px;
           transform: translateX(-50%);
         }
 
@@ -565,6 +564,7 @@
         .header-position .but-set{
           font-size: 10px;
           justify-content: center;
+          left:-20px;
         }
 
         .header-position .header-set{
@@ -572,28 +572,91 @@
           font-size: 18px;
           padding-top: 5px;
           text-align: center;
-          margin-left: 5px;
+          margin-left:-50%;
           left: 50%;
           transform: translateX(-50%);
         }
+/*==========================================section2======================*/
 
-
-        .img-section-set{
-          position: absolute;
-          height: 20vh;
-          margin-top: -30%;
-          margin-right: 20%;
-        }
-
-        .section2-txt{
-          font-size: 10px;
-          text-align: center;
+       .kelas{
+          margin-top: 6%;
         }
 
         #section2 span{
           position: absolute;
           font-size: 1.5em;
-          margin-top: -20%;
+          margin-top: -30%;
+          left: 40%;
           
         }
+
+        .section2-txt{
+          margin-top:-100px ; 
+          font-size: 10px;
+          text-align: center;
+          margin-left: 15%;
+       
+        }
+
+        .sec2-button{
+          margin-top: -20%;
+          margin-left: 35%;
+        }
+/*==================================================section3=======================*/
+
+        #section3{
+          top: 42%; 
+        }
+
+        .section3-txt{
+          top: 60%;
+          font-size: 20px;
+          left: 60%;
+        }
+
+        .section3-carousel{
+          margin-top: -40%;
+        }
+
+        .section3-carousel-item{
+          width: 30%;
+          left: -3%;
+        }
+
+        .section3-txt-size{
+          font-size: 10px;
+        }
+
+        .section3-button{
+          top: 150%;
+          left: -3%;
+        }
+ /*==================================================section4======================*/
+         #section4{
+          padding-top: 183%;
+         } 
+           
+         .section4-txt{
+          font-size: 30px;
+          -webkit-text-stroke: 1px #ffffff;
+          letter-spacing: 1px;
+         }
+
+         .sec4-txt{
+          top : 35%;
+          left: -14%;
+         }
+  /*==============================================section5===========================*/
+         
+         #section5{
+          margin-top: 208.9%;
+         }
+
+         .section5-txt{
+          font-size: 30px;
+         }
+  /*==================================================footer============================*/    
+         #footer{
+          margin-top:-284%;
+         }
       }
