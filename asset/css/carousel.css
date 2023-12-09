@@ -169,13 +169,14 @@ main {
 }
 
 .sec4-txt{
+  font-family: 'Goldman', sans-serif;
   z-index: 2;
   position: absolute;
   margin-top: 287%;
   margin-left: 45%;
   transition: all .5s;
   font-size: 5rem;
-  -webkit-text-stroke: 5px #ffffff;
+  -webkit-text-stroke: 3px #ffffff;
   color: transparent;
   cursor: pointer;
   user-select: none;

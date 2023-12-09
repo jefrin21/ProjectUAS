@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS:GO HUB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
+    <link rel="stylesheet" href="asset/css/style.css">
+    
     <style>
 
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Lobster&family=Open+Sans:wght@400;700&family=PT+Sans:ital,wght@1,700&display=swap');
+      body{
+        font-family: 'Inter', sans-serif;
+      }
+      .news-head{
+        background-color: black;
+        padding-top: 1px;
+      }
+
       .judul{
-        color: gold;
-        margin-top: 80px;
+        font-size: 60px;
+        font-weight: 900;
+        color: #ffc107;
+        margin-top: 120px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -25,53 +37,158 @@
       }
 
       .divider{
-          border: 1px solid;
-          margin: 30px 300px;
-          border-color: white;
-          border-radius: 10px;
+          border: 3px solid;
+          margin: 30px 0;
+          border-color: #ffc107;
         }
 
-        .main-img{
-          margin: 20px auto;
-          display: flex;
-          justify-content: center;
-          width: 800px;
-          height: auto;
-          border-radius: 10px;
-          size: 100%;
+        .rec-divider{
+          border: 2px solid;
+          margin: 0 -10px;
+          margin-top: 10px;
+          border-color: #ffc107;
         }
 
-        .paragraph{
-          color: white;
-          margin: 30px 24%;
-          text-align: justify;
-        }
+     .grid{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+      }
 
-        .pointer{
-          margin: 25px 24%;
-          padding-top: 30px;
-          padding-bottom: 40px;
-        }
+      .main-img{
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        width: 800px;
+        height: auto;
+        size: 100%;
+      }
 
-        .point{
-          color: white;
-          background-color: gold;
-          padding: 5px 15px;
-          border-radius: 5px;
-        }
+      .paragraph{
+        color: white;
+        margin: 30px 15%;
+        text-align: justify;
+      }
 
-        a{
-          text-decoration: none;
-          color: inherit;
-        }
+      .pointer{
+        margin: 25px 15%;
+        padding-top: 30px;
+        padding-bottom: 40px;
+      }
+
+      .point{
+        color: #ffc107;
+        background-color: transparent;
+        padding: 5px 15px;
+        border: 1px solid white;
+        border-radius: 5px;
+      }
+
+      .point:hover{
+        cursor: pointer;
+        background-color: #ffc107;
+        color: black;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
         
-        .previous{
-          float: left;
-        }
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+        
+      .previous{
+        float: left;
+      }
 
-        .next{
-          float: right;
-        }
+      .next{
+        float: right;
+      }
+
+      .content-right{
+        background-color: transparent;
+      }
+
+      .box{
+        color: #ffc107;
+        font-weight: 900;
+        font-size: 25px;
+        background-color: #212529;
+        margin: 0 20px;
+        margin-top: 20px;
+        border: 3px solid #ffc107;
+        padding: 10px;
+      }
+
+      .rec-img{
+        width: 337px;
+        margin: 0 -10px;
+      }
+
+      .rec-title{
+        margin-top: 5px;
+      }
+
+      .rec-text{
+        color: white;
+        font-weight: 400;
+        font-size: 15px;
+        max-height: 45px;
+        overflow: hidden;
+        text-align: justify;
+      }
+
+      .socmed{
+        width: 35px;
+        margin: 5px 6px;
+      }
+
+      .socmed:hover{
+        cursor: pointer;
+      }
+
+      .triangle-downleft-img{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-top: 150px;
+        margin-left: -10px;
+        border-left: 0px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 40px solid #212529;
+      }
+
+      .rec-triangle-downleft-head{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-top: -18px;
+        margin-left: -10px;
+        border-left: 0px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 30px solid #ffc107;
+      }
+
+      .triangle-upright{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: 310px;
+        margin-top: -10px;
+        border-left: 20px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 40px solid #ffc107;
+      }
+
+      .rec-triangle-upright{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: 310px;
+        margin-top: 0px;
+        border-left: 20px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 40px solid #ffc107;
+      }
+      
     </style>
     
   </head>
@@ -80,61 +197,146 @@
 
         <!-- Navbar/Header -->
         <section id="Navbar">   
-            <div class="fixed-top bg-dark">
-              
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item ">
-                          <a class="nav-link text-white"  href="index.html">CS:GO Basic</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="tradeSkin.html">Trade Skin</a>
-                        </li>
-                        <li class="nav-item">   
-                          <a class="nav-link text-white" href="Product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white " href="#">CS:GO News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white " href="about.html">About</a>
-                          </li>
-                      </ul>
+          <div class="container  fixed-top p-1">
+            <div class="navbar navbar-expand-lg align-items-center justify-content-between gap-5 "> 
+            <a href="index.html">
+              <img src="asset/img/logo csgoo.png" alt="logo" class="img-fluid image me-auto ">
+            </a>
+
+            <button
+             class="navbar-toggler bg-light "
+             type="button"
+             data-bs-toggle="collapse"
+             data-bs-target="#navmenu"
+             >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="collapse navbar-collapse nav  justify-content-center flex-column flex-sm-row" id="navmenu">
+                <li class="nav-item ">
+                  <a class="nav-link text-white"  href="index.html">CS:GO Basic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="tradeSkin.html">Trade Skin</a>
+                </li>
+                <li class="nav-item">   
+                  <a class="nav-link text-white" href="Product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="csgoNews.html">CS:GO News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="about.html">About</a>
+                  </li>
                 
+                <button class="button btn btn-outline-warning border ms-auto d-md-none mx-auto ">
+                     LOGIN
+                </button>
+                  
+              </ul>
+
+              <button class="button btn btn-outline-warning border ms-auto d-none d-lg-block  ">
+                LOGIN
+              </button>
+              
             </div>
+        </div>
         </section>
 
         <!-- ISI -->   
 
         <section id="cont1" class="news1">
-          <h2 class="judul">CS:GO Lorem ipsum dolor sit amer</h2>
-          <div class="post-info">by Admin || 26 November 2023 || Game Updates</div>
-          <div class="divider"></div>
-          <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="main image" class="main-img">
-          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur vitae dui vel bibendum. Sed dui neque, dignissim sed sagittis quis, porta eu velit. Phasellus ut scelerisque est, non ultrices massa. Suspendisse scelerisque auctor convallis. Morbi vel porttitor purus, vel feugiat tortor. Nulla sed ultrices lacus, et ullamcorper eros. Nunc non massa magna. In tincidunt justo finibus orci pulvinar aliquet. In feugiat ut elit sit amet mollis. Praesent eget leo nulla.
-            <br>
-            <br>
-            Nam quis sem ut risus egestas eleifend vitae et risus. Nunc condimentum lacus orci, a auctor lectus maximus ac. Phasellus accumsan erat non purus vehicula lacinia. Cras urna eros, euismod non facilisis id, mattis a sapien. Aliquam in urna in felis dapibus malesuada ut at nisi. Suspendisse sed massa leo. Nulla sagittis sagittis tristique. Ut tincidunt lectus eget tortor lobortis sollicitudin. Mauris convallis fringilla gravida. Donec nec sodales nunc. Nulla ut lorem id augue lacinia lobortis fringilla sit amet ipsum. Proin nunc leo, accumsan vitae lorem et, rhoncus dignissim purus. Quisque vitae mauris eget mi gravida rutrum sed eget arcu.
-            <br>
-            br
-            Nulla euismod imperdiet viverra. Mauris placerat porta massa, non dapibus sem. Aliquam lobortis ligula lacus. Maecenas et pharetra diam. Nunc velit mauris, posuere id ornare a, aliquet id lorem. Pellentesque in justo vitae neque scelerisque faucibus. Sed egestas, ipsum eu rutrum vulputate, sem felis hendrerit enim, porttitor egestas purus lacus quis neque. Pellentesque rutrum diam id commodo convallis. Proin fermentum, urna pellentesque hendrerit vehicula, purus justo sollicitudin est, id blandit nisi nibh a lacus. Maecenas porttitor augue at laoreet vehicula.
-            <br>
-            <br>
-            Vestibulum finibus imperdiet metus id ultrices. Nam at enim sem. Praesent mollis rutrum justo a malesuada. Proin fringilla sapien ante, quis cursus eros luctus eu. Duis et tincidunt magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam non sagittis urna, id placerat lectus. Aliquam scelerisque libero eget mauris vulputate, nec egestas turpis mollis. Pellentesque ut ligula quam. Nunc in blandit ipsum. Nunc eget ipsum vitae est blandit bibendum. Pellentesque euismod convallis sem sit amet varius. Maecenas efficitur laoreet pretium. Fusce id nunc nulla.
-            <br>
-            <br>
-            Morbi luctus ac leo vel eleifend. Pellentesque efficitur, orci sed condimentum vulputate, magna nibh sodales lectus, congue auctor urna sapien at tortor. Donec tristique, quam nec laoreet viverra, neque justo ornare nibh, a ornare tellus risus et quam. Sed luctus odio posuere, tristique dolor eu, molestie dolor. Integer nec lacinia sem. Donec molestie fringilla augue a vestibulum. Suspendisse non est suscipit sem vulputate mollis. Proin molestie bibendum felis non dapibus. Etiam sed libero ullamcorper, faucibus erat sit amet, vulputate quam. Morbi porta urna hendrerit mi finibus, quis vulputate purus accumsan. Donec a risus sagittis, consectetur sem nec, mattis justo. Fusce vitae varius magna. Suspendisse ut nisl quis ligula ultricies consectetur in quis nisl.
-          </p>
 
-          <div class="pointer">
-            <button class="point previous">
-              <a href="csgoNews.html">Previous Post</a>
-            </button>
-            <button class="point next">
-              <a href="csgoNews.html">Next Post</a>
-            </button>
+          <div class="news-head">
+            <h2 class="judul">CS:GO RANKED 1 ON TOP GAMES 2023</h2>
+            <div class="post-info">by Admin || 26 November 2023 || Game Updates</div>
+
+            <div class="triangle-downleft-head"></div>
+            <div class="divider"></div>
+          </div>
+
+          <div class="grid">
+            <div class="content-left">
+              <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="main image" class="main-img">
+              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur vitae dui vel bibendum. Sed dui neque, dignissim sed sagittis quis, porta eu velit. Phasellus ut scelerisque est, non ultrices massa. Suspendisse scelerisque auctor convallis. Morbi vel porttitor purus, vel feugiat tortor. Nulla sed ultrices lacus, et ullamcorper eros. Nunc non massa magna. In tincidunt justo finibus orci pulvinar aliquet. In feugiat ut elit sit amet mollis. Praesent eget leo nulla.
+                <br>
+                <br>
+                Nam quis sem ut risus egestas eleifend vitae et risus. Nunc condimentum lacus orci, a auctor lectus maximus ac. Phasellus accumsan erat non purus vehicula lacinia. Cras urna eros, euismod non facilisis id, mattis a sapien. Aliquam in urna in felis dapibus malesuada ut at nisi. Suspendisse sed massa leo. Nulla sagittis sagittis tristique. Ut tincidunt lectus eget tortor lobortis sollicitudin. Mauris convallis fringilla gravida. Donec nec sodales nunc. Nulla ut lorem id augue lacinia lobortis fringilla sit amet ipsum. Proin nunc leo, accumsan vitae lorem et, rhoncus dignissim purus. Quisque vitae mauris eget mi gravida rutrum sed eget arcu.
+                <br>
+                br
+                Nulla euismod imperdiet viverra. Mauris placerat porta massa, non dapibus sem. Aliquam lobortis ligula lacus. Maecenas et pharetra diam. Nunc velit mauris, posuere id ornare a, aliquet id lorem. Pellentesque in justo vitae neque scelerisque faucibus. Sed egestas, ipsum eu rutrum vulputate, sem felis hendrerit enim, porttitor egestas purus lacus quis neque. Pellentesque rutrum diam id commodo convallis. Proin fermentum, urna pellentesque hendrerit vehicula, purus justo sollicitudin est, id blandit nisi nibh a lacus. Maecenas porttitor augue at laoreet vehicula.
+                <br>
+                <br>
+                Vestibulum finibus imperdiet metus id ultrices. Nam at enim sem. Praesent mollis rutrum justo a malesuada. Proin fringilla sapien ante, quis cursus eros luctus eu. Duis et tincidunt magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam non sagittis urna, id placerat lectus. Aliquam scelerisque libero eget mauris vulputate, nec egestas turpis mollis. Pellentesque ut ligula quam. Nunc in blandit ipsum. Nunc eget ipsum vitae est blandit bibendum. Pellentesque euismod convallis sem sit amet varius. Maecenas efficitur laoreet pretium. Fusce id nunc nulla.
+                <br>
+                <br>
+                Morbi luctus ac leo vel eleifend. Pellentesque efficitur, orci sed condimentum vulputate, magna nibh sodales lectus, congue auctor urna sapien at tortor. Donec tristique, quam nec laoreet viverra, neque justo ornare nibh, a ornare tellus risus et quam. Sed luctus odio posuere, tristique dolor eu, molestie dolor. Integer nec lacinia sem. Donec molestie fringilla augue a vestibulum. Suspendisse non est suscipit sem vulputate mollis. Proin molestie bibendum felis non dapibus. Etiam sed libero ullamcorper, faucibus erat sit amet, vulputate quam. Morbi porta urna hendrerit mi finibus, quis vulputate purus accumsan. Donec a risus sagittis, consectetur sem nec, mattis justo. Fusce vitae varius magna. Suspendisse ut nisl quis ligula ultricies consectetur in quis nisl.
+              </p>
+
+              <div class="pointer">
+                <div class="point previous">
+                  <a href="csgoNews.html">Previous Post</a>
+                </div>
+                <div class="point next">
+                  <a href="csgoNews.html">Next Post</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-right">
+              <div class="box">
+                <div class="triangle-upright"></div>
+                <span>S H A R E</span>
+                <br>
+                <img src="asset/img/ig-logo.png" alt="ig-logo" class="socmed">
+                <img src="asset/img/x-logo.png" alt="x-logo" class="socmed">
+                <img src="asset/img/wa-logo.png" alt="wa-logo" class="socmed">
+                <img src="asset/img/fb-logo.png" alt="fb-Logo" class="socmed">
+                <img src="asset/img/tele-logo.png" alt="tele-logo" class="socmed">
+                <img src="asset/img/line-logo.png" alt="line-logo" class="socmed">
+              </div>
+              <div class="box">
+                <div class="triangle-upright"></div>
+                <span>R E C O M M E N D E D</span>
+
+                <div class="rec-news">
+                  <div class="rec-divider"></div>
+                  <div class="triangle-downleft-img"></div>
+                  <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="main image" class="rec-img">
+                  <div class="rec-title">CSGO UPDATE PATCH</div>
+                  <div class="rec-text">Lorem ipsum molor bjir amer, consectetur adipiscing elit. Suspendisse consectetur vitae dui vel bibendum. Sed dui neque, dignissim sed sagittis quis, porta eu velit. Phasellus ut scelerisque est, non ultrices massa. Suspendisse scelerisque auctor convallis. Morbi vel porttitor purus, vel feugiat tortor. Nulla sed ultrices lacus, et ullamcorper eros. Nunc non massa magna. In tincidunt justo finibus orci pulvinar aliquet. In feugiat ut elit sit amet mollis. Praesent eget leo nulla.</div>
+                </div>
+                
+                <div class="rec-news">
+                  <div class="rec-divider"></div>
+                  <div class="triangle-downleft-img"></div>
+                  <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="main image" class="rec-img">
+                  <div class="rec-title">CSGO UPDATE PATCH</div>
+                  <div class="rec-text">Lorem ipsum molor bjir amer, consectetur adipiscing elit. Suspendisse consectetur vitae dui vel bibendum. Sed dui neque, dignissim sed sagittis quis, porta eu velit. Phasellus ut scelerisque est, non ultrices massa. Suspendisse scelerisque auctor convallis. Morbi vel porttitor purus, vel feugiat tortor. Nulla sed ultrices lacus, et ullamcorper eros. Nunc non massa magna. In tincidunt justo finibus orci pulvinar aliquet. In feugiat ut elit sit amet mollis. Praesent eget leo nulla.</div>
+                </div>
+
+                <div class="rec-news">
+                  <div class="rec-divider"></div>
+                  <div class="triangle-downleft-img"></div>
+                  <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="main image" class="rec-img">
+                  <div class="rec-title">CSGO UPDATE PATCH</div>
+                  <div class="rec-text">Lorem ipsum molor bjir amer, consectetur adipiscing elit. Suspendisse consectetur vitae dui vel bibendum. Sed dui neque, dignissim sed sagittis quis, porta eu velit. Phasellus ut scelerisque est, non ultrices massa. Suspendisse scelerisque auctor convallis. Morbi vel porttitor purus, vel feugiat tortor. Nulla sed ultrices lacus, et ullamcorper eros. Nunc non massa magna. In tincidunt justo finibus orci pulvinar aliquet. In feugiat ut elit sit amet mollis. Praesent eget leo nulla.</div>
+                </div>
+
+                <div class="rec-news">
+                  <div class="rec-divider"></div>
+                  <div class="triangle-downleft-img"></div>
+                  <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="main image" class="rec-img">
+                  <div class="rec-title">CSGO UPDATE PATCH</div>
+                  <div class="rec-text">Lorem ipsum molor bjir amer, consectetur adipiscing elit. Suspendisse consectetur vitae dui vel bibendum. Sed dui neque, dignissim sed sagittis quis, porta eu velit. Phasellus ut scelerisque est, non ultrices massa. Suspendisse scelerisque auctor convallis. Morbi vel porttitor purus, vel feugiat tortor. Nulla sed ultrices lacus, et ullamcorper eros. Nunc non massa magna. In tincidunt justo finibus orci pulvinar aliquet. In feugiat ut elit sit amet mollis. Praesent eget leo nulla.</div>
+                </div>
+                
+              </div>
+            </div>
+
           </div>
           </section>
-
+      
 
         <!-- Footer -->
 

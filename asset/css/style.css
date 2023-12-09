@@ -1,3 +1,4 @@
+    @import url('https://fonts.googleapis.com/css2?family=Goldman&family=Inter:wght@400;900&display=swap'); 
     body{
       background-color: #000000;
     }
@@ -95,12 +96,11 @@
         z-index: 1;
         position: absolute;
         margin-top:43%;
-        margin-left:10%;
+        margin-left:5%;
         width: 100%;
         color: #fff;
         font-size: 3em;
-        font-weight: bold;
-        font-family: Helvetica;
+        font-family: 'Goldman', sans-serif;
         text-shadow: 
           0 1px 0 #ccc, 
           0 2px 0 #c9c9c9, 
@@ -120,13 +120,13 @@
       .tag-line{
         z-index: 1;
         position: absolute;
-        margin-top: 30%;
-        margin-left:20%;
+        margin-top: 20%;
+        margin-left: -8%;
+        text-align: center;
         width: 100%;
         color :#fff;
-        font-size: 1em;
-        font-weight: bold;
-        font-family: helvetica;
+        font-family: 'Goldman', sans-serif;
+        font-size: 40px;
         text-shadow: 
         0 1px 0 #ccc, 
         0 20px 20px rgba(0,0,0,.15);
@@ -144,8 +144,8 @@
 
       .but-set{
         position: absolute;
-        margin-top: 37%;
-        margin-left: 40%;
+        margin-top: 30%;
+        margin-left: 35%;
         /* z-index: 1; */
         cursor: pointer;
       }
@@ -177,6 +177,9 @@
   
 }      
 
+.csgo-txt{
+  font-family: 'Goldman',sans-serif;
+}
 
 .section2-img{
   position: absolute;
@@ -188,13 +191,14 @@
 }
 
 #section2 span {
+  font-family: 'Goldman', sans-serif;
   transition: all .5s;
   -webkit-text-stroke: 3px #ffffff;
   font-size: 6rem;
   text-align: center;
   letter-spacing: 10px;
   color: transparent;
-  font-family: sans-serif;
+
   cursor: pointer;
   user-select: none;
 }
@@ -371,6 +375,7 @@
 }
 
 .sec3-moving{
+  font-family: 'Goldman',sans-serif;
   white-space: nowrap; 
   animation: moveText 15s linear infinite;
   transition: all .5  s;
@@ -378,7 +383,6 @@
   text-align: center;
   letter-spacing: 10px;
   color: transparent;
-  font-family: sans-serif;
   cursor: pointer;
   user-select: none;
 }
@@ -428,13 +432,14 @@
   }
 
   .section5-txt{
+    font-family: 'Goldman', sans-serif;
     transition: all .5s;
-  font-size: 3rem;
-  -webkit-text-stroke: 1px #ffffff;
-  color: transparent;
-  cursor: pointer;
-  user-select: none;
-  letter-spacing: 10px;
+    font-size: 3rem;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    cursor: pointer;
+    user-select: none;
+    letter-spacing: 10px;
   }
 
   .section5-txt:hover{
