@@ -65,6 +65,7 @@ body {
   background-color: var(--color-graybase-600);
   border-radius: 6px;
   margin: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .foto-skin {
@@ -130,6 +131,7 @@ body {
   padding: 0;
   font-family: Inter, system-ui;
   -webkit-font-smoothing: antialiased;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .rarity-skin-consumer {
@@ -180,6 +182,7 @@ body {
   color: #ffff00;
   letter-spacing: .005em;
   white-space: nowrap;
+  font-family: Inter;
 }
 
 .skin-startrak2 {
@@ -188,14 +191,51 @@ body {
   color: #fff;
   letter-spacing: .005em;
   white-space: nowrap;
-
+  font-family: Inter;
 }
-.title-skins {
+
+
+.title-module {
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
-  letter-spacing: .005em;
   white-space: nowrap;
+  font-family: Inter, system-ui;
+  position: relative;
+  color: #ff0000; /* Warna dasar neon merah */
+  background: linear-gradient(90deg, #ff0000, #ff7300, #ff0000); /* Warna latar belakang gradient untuk efek neon */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Membuat teks menjadi transparan */
+  animation: neonGlow 1s linear infinite; /* Animasi warna neon */
+}
+
+@keyframes neonGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Efek bayangan */
+  }
+  50% {
+    text-shadow: none; /* Hapus efek bayangan pada tengah animasi */
+  }
+}
+
+
+.title-skins span {
+  color: #fff;
+  letter-spacing: 0.005em;
+  display: inline-block;
+  animation: colorChange 3s infinite; /* Animasi warna selama 3 detik, diulang secara tak terbatas */
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ffd700; /* Warna awal: putih */
+  }
+  50% {
+    color: #fff; /* Warna setengah waktu: kuning */
+  }
+  100% {
+    color: #ffd700; /* Warna akhir: putih */
+  }
 }
 .deskripsi-senjata {
   grid-area: deskripsi-senjata;
@@ -219,7 +259,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
+
 .text-module {
   font-size: var(--frontly-body-md-font-size);
   font-weight: var(--frontly-body-md-font-weight);
@@ -238,7 +280,7 @@ body {
   font-weight: var(--frontly-subhead-lg-font-weight);
   line-height: var(--frontly-subhead-lg-line-height);
   letter-spacing: var(--frontly-subhead-lg-letter-spacing);
-  color: #bbb9c7;
+  color: #f26767;
 }
 .side-both {
   grid-area: side-both;
@@ -281,6 +323,7 @@ body {
   margin-bottom: 13px;
   overflow: hidden;
   border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .rare-float {
@@ -293,7 +336,7 @@ body {
   gap: 10px;
   padding: 20px;
   position: relative;
-
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .float1 {
@@ -317,6 +360,7 @@ body {
   grid-area: harga-skin;
   display: flex;
   align-items: center;
+  font-size: 35px;
 }
 
 .skin1 {
@@ -341,12 +385,39 @@ body {
   width: 100%;
   height: 56px;
   padding: 11px 14px;
-  font-family: Inter,system-ui;
+  font-family: Inter, system-ui;
   cursor: pointer;
   border: none;
   border-radius: 4px;
   outline: 0;
-  transition: all .2s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.addtotrade:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Efek glowing edge white saat hover */
+}
+
+.addtotrade span {
+  position: relative;
+  z-index: 2;
+}
+
+.addtotrade:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 80%); /* Efek glowing button */
+  transform: scale(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.addtotrade:hover:after {
+  transform: scale(1);
 }
 
 .image-preview {
@@ -430,21 +501,46 @@ body {
   border-radius: var(--size-corner-radius-regular);
 }
 
-.rekomendasi-terbaik { 
+.rekomendasi-terbaik {
   grid-area: rekomendasi-terbaik;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   color: white;
- }
+}
 
- .rekomendasi-header {
+.rekomendasi-terbaik {
+  grid-area: rekomendasi-terbaik;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  color: white;
+}
+
+.rekomendasi {
   font-size: 20px;
   line-height: 22px;
   grid-column-start: 1;
   grid-column-end: -1;
   text-align: center;
   margin-bottom: 24px;
- }
+}
+
+.rekomendasi span {
+  display: inline-block;
+  opacity: 0;
+  animation: slideLeft 1.5s forwards;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 
  .bagian-rekomendasi-item {  display: grid;
   grid-template-columns: 214px 214px 214px 214px 214px 214px;
@@ -463,7 +559,6 @@ body {
 }
 
 
-
 .good-item-1 { 
   grid-area: good-item-1; 
   background-color: var(--color-graybase-600);
@@ -476,6 +571,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-card-img{
@@ -486,7 +582,7 @@ body {
   top: 50%;
   transform: translate(-50%,-50%);
   background: 50%/contain no-repeat;
-  margin-top: -25px;
+  margin-top: -35px;
 }
 
 .good-card-bottom {
@@ -525,6 +621,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .user-price {
@@ -549,6 +646,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
@@ -564,6 +662,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-item-5 { 
@@ -578,6 +677,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-item-6 { 
@@ -592,6 +692,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-item-7 { 
@@ -606,6 +707,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-item-8 { 
@@ -620,6 +722,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-item-9 { 
@@ -634,6 +737,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-item-10 { 
@@ -648,6 +752,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-item-11 { 
@@ -662,6 +767,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-item-12 { 
@@ -676,6 +782,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .good-card-rarity {
