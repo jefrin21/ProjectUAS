@@ -1,5 +1,9 @@
-    body{
+   
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+   
+   body{
       background-color: #000000;
+      font-family: 'Inter', sans-serif;
     }
     
     .image{
@@ -31,7 +35,6 @@
       .txt-set{
         color: #fff;
         font-weight: bold;
-        font-family: Helvetica;
         text-shadow: 
           0 1px 0 #ccc,  
           0 20px 20px rgba(0,0,0,.15); 
@@ -100,7 +103,6 @@
         color: #fff;
         font-size: 3em;
         font-weight: bold;
-        font-family: Helvetica;
         text-shadow: 
           0 1px 0 #ccc, 
           0 2px 0 #c9c9c9, 
@@ -126,7 +128,7 @@
         color :#fff;
         font-size: 1em;
         font-weight: bold;
-        font-family: helvetica;
+     
         text-shadow: 
         0 1px 0 #ccc, 
         0 20px 20px rgba(0,0,0,.15);
@@ -194,7 +196,6 @@
   text-align: center;
   letter-spacing: 10px;
   color: transparent;
-  font-family: sans-serif;
   cursor: pointer;
   user-select: none;
 }
@@ -232,7 +233,7 @@
 .sec2-button{
   position: absolute;  
   margin-top: -7%;
-  margin-left:57%;
+  margin-left:60%;
   font-size: 13px;
   /* z-index: 1; */
 }
@@ -378,7 +379,7 @@
   text-align: center;
   letter-spacing: 10px;
   color: transparent;
-  font-family: sans-serif;
+
   cursor: pointer;
   user-select: none;
 }
