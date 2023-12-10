@@ -243,6 +243,12 @@
   margin-left:60%;
   font-size: 13px;
   /* z-index: 1; */
+  
+}
+
+.sec2-button a{
+  text-decoration: none;
+  color: white;
 }
 
 #section2 .border:hover{
@@ -284,6 +290,11 @@
   margin-top: -19%;
   overflow: hidden;
   user-select: none;
+}
+
+.section3-button a{
+  text-decoration: none;
+  color: white;
 }
 
 .box-body {

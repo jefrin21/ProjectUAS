@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Inter:wght@400;900&display=swap'); 
+body{
+  background-color: #000000;
+  font-family: 'Inter', sans-serif;
+  color: white;
+}
+
+.image{
+    width: 150px;
+    height: 50px;
+}
+
+.txt-set{
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 
+    0 1px 0 #ccc,  
+    0 20px 20px rgba(0,0,0,.15); 
+}
+
+@keyframes shimmer {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+  }
+}
+
+.nav-set:hover{
+  border-bottom: 2px;
+  animation: shimmer 2s infinite;
+}
+
+.nav-set:hover{
+    border-bottom: 2px;
+    animation: shimmer 2s infinite;
+  }
+
+  /*===========================================================================isi=========================================================================*/
+
+  .rank-judul{
+    transition: all .5s;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .rank-judul:hover{
+    text-shadow: 10px 10px 0px #fa7000,
+    15px 15px 0px #fa8500,
+    20px 20px 0px #ffa704,
+    25px 25px 0px #ffa704,
+    45px 45px 10px #24192c;
+  }
+
+  .icon-rank{
+    color: #ffd700;
+  }
+
+  #rank-section1 span{
+    font-size: 10px;
+  }
+
+  /*=========================================rank section1=================================================*/
+
+  @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  :root {
+    --card-height: 20vh;
+    --card-width: calc(var(--card-height) / 0.8);
+  }
+  
+  
+  
+  
+  
+  .rank-section1-card {
+    background: #191c29;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    font-family: cursive;
+  }
+  
+  .rank-section1-card:hover {
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+  }
+  .rank-section1-card:hover:before, .rank-section1-card:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+  
+  
+  .rank-section1-card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite;
+  }
+  
+  .rank-section1-card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+ #rank-section2 p{
+    font-size: 15px;
+ }
+  
+
+ /*===========================================================================footer===================================================*/
+ .footer-set{
+  position: absolute;
+  z-index: 1;
+  margin-top: 10%px;
+  height: 50%;
+  background-color : #1b1b1b ;
+
+}
+
+
+.footer-txt-set{
+  position: absolute;
+}
+
+#footer ul{
+list-style-type: none;
+color: white;
+}
+
+
+
+#footer a{
+text-decoration: none;
+color: white;
+}
+
+#footer .border-footer{
+background-color: #fff;
+box-shadow: 5px 5px 10px #fff;
+border: none;
+}
+
+#footer .footer-info:hover{
+background-color: #b9b9b9;
+font-size: 20px;
+border-radius: 20px;
+}
+
+#footer .border-footer:hover{
+width: 20px;
+background-color: #b9b9b9;
+}
+
+#footer .bi-instagram{
+color: #E4405F;
+font-size: 1em;
+border-radius: 10px;
+}
+
+#footer .bi-facebook{
+color: #1877F2;
+font-size: 1em;
+border-radius: 10px;
+}
+
+#footer .bi-twitter{
+color: #1DA1F2;
+font-size:1em;
+border-radius: 10px;
+}
+
