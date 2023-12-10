@@ -5,54 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CS:GO HUB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
+    <link rel="stylesheet" href="asset/css/style.css">
+
     <style>
-      .parallelogram {
-        width: 400px;
-        height: 500px;
-        margin: 10px 20px;
-        border: 3px solid gold;
-        transform: skew(170deg);
-        overflow: hidden;
-        border-radius: 10px;
+
+      @import url('https://fonts.googleapis.com/css2?family=Goldman&family=Inter:wght@400;900&display=swap'); 
+      body{
+        font-family: 'Inter', sans-serif;
+      }
+      .bg{
+        background-image: url(asset/img/wallpaper_nologo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1600px;
+
+      }
+      .latest-news{
+        font-family: 'Goldman', sans-serif;
+        font-size: 65px;
+        max-width: 900px;
+        margin-left: 11px;
+        margin-bottom: -5px;
+        -webkit-text-stroke: 1px #ffffff;
+        color: transparent;
+      }
+      .head-news {
+        width: 1250px;
+        height: 400px;
+        border: 3px solid #ffc107;
         background-color: #212529;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        justify-content: center;
+        animation: shimmer 2s infinite;
       }
 
-      .parallelogram:hover {
-        transform: skew(170deg) scale(1.01);
-        border: 2px solid white;
+      .head-news:hover{
+        animation: none;
+        box-shadow: 0 0 3px 3px white;
+      }
+
+      .discover-more{
+        font-family: 'Goldman', sans-serif;
+        -webkit-text-stroke: 1px #ffffff;
+        color: transparent;
+        font-size: 45px;
+        max-width: 900px;
+        margin-left: 12px;
+        margin-bottom: -20px;
+      }
+
+      .cards{
+        justify-content: center;
+        margin: auto;
+      }
+
+      .card-news {
+        width: 400px;
+        height: 480px;
+        margin: 15px 0;
+        border: 3px solid #ffc107;
+        overflow: hidden;
+        background-color: #212529;
+        animation: shimmer 2s infinite;
+      }
+
+      .card-news:hover {
+        animation: none;
         box-shadow: 0 0 3px 3px white;
         cursor: pointer;
       }
 
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
 
-
-      .frame{
-        transform: skew(-170deg);
-        margin-left: -60px;
-        height: 250px;
-        width: 500px;
+      .frame-head-left{
+        height: 397px;
+        width: 700px;
+        margin-left: -20px;
         overflow: hidden;
       }
 
+      .frame-head-right{
+        height: 395px;
+        width: 560px;
+        background-color: #212529;
+      }
+
+      .frame{
+        height: 225px;
+        width: 395px;
+        overflow: hidden;
+      }
+
+      .img-head{
+        width: 700px;
+        display: block;
+      }
+
       .img1{
-        width: 500px;
+        width: 400px;
+        display: block;
       }
 
       .isi{
-        margin: 70px 120px;
+        margin: 90px 120px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
 
-      .row{
-        display: inline-flex;
+      .head-title{
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        color: #ffc107;
+        margin: 20px 0;
+        margin-left: 30px;
+        margin-right: 40px;
+      }
+
+      .title{
+        color: #ffc107;
+        margin: 10px 20px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
       }
 
       .head-text{
-        color: gold;
-        margin: 10px 20px;
+        color: white;
+        margin: 15px 0;
+        margin-left: 30px;
+        margin-right: 40px;
+        max-height: 120px;
+        overflow: hidden;
+        text-align: justify;
       }
 
       .text{
@@ -63,51 +152,173 @@
         text-align: justify;
       }
 
+      .date-ctg-head{
+        color: white;
+        margin-right: 20px;
+        margin-top: 35px;
+        text-align: right;
+        font-size: 14px;
+        font-family: 'Goldman', sans-serif;
+      }
+
       .date-ctg{
         color: white;
         margin: 0 10px;
+        margin-top: 20px;
         text-align: right;
+        font-size: 14px;
+        font-family: 'Goldman', sans-serif;
       }
 
-      @media (max-width: 768px) {
-        .cus {
-          width: 50%;
-        }
+      .triangle-downleft-img{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-top: 165px;
+        border-left: 0px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 60px solid #212529;
       }
+
+      .triangle-downleft-head{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-top: 335px;
+        margin-left: 7px;
+        border-left: 0px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 60px solid #ffc107;
+      }
+
+      .triangle-upright-head{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: 525px;
+        border-left: 30px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 60px solid #ffc107;
+      }
+
+      .triangle-upright-img-head{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: 672px;
+        border-left: 30px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 60px solid #212529;
+      }
+      
+      .triangle-downleft{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-top: 417px;
+        border-left: 0px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 60px solid #ffc107;
+      }
+
+      .triangle-upright{
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: 367px;
+        border-left: 30px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 60px solid #ffc107;
+      }
+
+      .read-more{
+        color: #ffc107;
+        padding: 10px;
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-right: 60px;
+        text-align: center;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+      }
+
+      .read-more:hover{
+        color: black;
+        background-color: #ffc107;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
       a{
         text-decoration: none;
         color: inherit;
+      }
+
+      @keyframes shimmer {
+        0% {
+          box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+        }
+        50% {
+          box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
+        }
+        100% {
+          box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+        }
       }
 
     </style>
     
   </head>
   
-  <body class="bg-dark">
+  <body class="bg">
 
         <!-- Navbar/Header -->
         <section id="Navbar">   
-            <div class="fixed-top bg-dark">
-              
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item ">
-                          <a class="nav-link text-white"  href="index.html">CS:GO Basic</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white" href="tradeSkin.html">Trade Skin</a>
-                        </li>
-                        <li class="nav-item">   
-                          <a class="nav-link text-white" href="Product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link text-white " href="#">CS:GO News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white " href="about.html">About</a>
-                          </li>
-                      </ul>
+          <div class="container  fixed-top p-1">
+            <div class="navbar navbar-expand-lg align-items-center justify-content-between gap-5 "> 
+            <a href="index.html">
+              <img src="asset/img/logo csgoo.png" alt="logo" class="img-fluid image me-auto ">
+            </a>
+
+            <button
+             class="navbar-toggler bg-light "
+             type="button"
+             data-bs-toggle="collapse"
+             data-bs-target="#navmenu"
+             >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="collapse navbar-collapse nav  justify-content-center flex-column flex-sm-row" id="navmenu">
+                <li class="nav-item ">
+                  <a class="nav-link text-white"  href="index.html">CS:GO Basic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="tradeSkin.html">Trade Skin</a>
+                </li>
+                <li class="nav-item">   
+                  <a class="nav-link text-white" href="Product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white " href="csgoNews.html">CS:GO News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white " href="about.html">About</a>
+                  </li>
                 
+                <button class="button btn btn-outline-warning border ms-auto d-md-none mx-auto ">
+                     LOGIN
+                </button>
+                  
+              </ul>
+
+              <button class="button btn btn-outline-warning border ms-auto d-none d-lg-block  ">
+                LOGIN
+              </button>
+              
             </div>
+    </div>
         </section>
 
         <!-- ISI -->   
@@ -115,17 +326,53 @@
         <section id="isii" class="isi">
             <div class="news-contents">
 
+              <!-- HEAD NEWS -->
+              <h1 class="latest-news">L A T E S T&nbsp;&nbsp;&nbsp;&nbsp;UPDATE</h1>
+
+              <div class="cards row col-md-12">
+
+                
+                <div class=" head-news">
+                  <div class="grid">   
+                    <div class="frame-head-left">
+                      <div class="triangle-downleft-head"></div>
+                      <div class="triangle-upright-img-head"></div>
+                      <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="gambar" class="img-head">
+                    </div>
+                    
+                    <div class="frame-head-right">
+                      <div class="triangle-upright-head"></div>
+                      <h1 class="head-title">CS:GO RANKED 1 ON TOP GAMES 2023</h1>
+                      <p class="head-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                          
+                      <a href="news1.html">
+                        <p class="read-more">Read More</p>
+                      </a>
+                      <p class="date-ctg-head">25/11/2023 - Events</p>
+                    </div>
+                  </div>
+                </div>
+              
+
+              </div>
+
               <!-- ROW 1 -->
 
-              <div class="row col-md-12">
-                
+              <h1 class="discover-more">DISCOVER&nbsp;&nbsp;&nbsp;&nbsp;M O R E</h1>
+
+              <div class="cards row col-md-12">
+
+                <!-- NEWS 1 -->
+
                 <div class="col-md-4">
                   <a href="news1.html">
-                    <div class="parallelogram">
+                    <div class="card-news">
+                      <div class="triangle-downleft"></div>
+                      <div class="triangle-upright"></div>
                       <div class="frame">
+                        <div class="triangle-downleft-img"></div>
                         <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="gambar" class="img1">
                       </div>
-                      <h2 class="head-text">CS:GO Lorem ipsum dolor sit amer</h2>
+                      <h2 class="title">CS:GO BIG UPDATE PATCH V7.1</h2>
                       <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                       <div class="date-ctg">
                         <p>26/11/2023 - Game Updates</p>
@@ -134,12 +381,17 @@
                   </a>
                 </div>
 
+                <!-- NEWS 2 -->
+
                 <div class="col-md-4">
-                  <div class="parallelogram">
+                  <div class="card-news">
+                    <div class="triangle-downleft"></div>
+                    <div class="triangle-upright"></div>
                     <div class="frame">
+                      <div class="triangle-downleft-img"></div>
                       <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="gambar" class="img1">
                     </div>
-                    <h2 class="head-text">CS:GO Lorem ipsum dolor sit amer</h2>
+                    <h2 class="title">THE 27TH CS TOURNAMENT!</h2>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div class="date-ctg">
                       <p>25/11/2023 - Events</p>
@@ -147,12 +399,17 @@
                   </div>
                 </div>
 
+                <!-- NEWS 3 -->
+                
                 <div class="col-md-4">
-                  <div class="parallelogram">
+                  <div class="card-news">
+                    <div class="triangle-downleft"></div>
+                    <div class="triangle-upright"></div>
                     <div class="frame">
+                      <div class="triangle-downleft-img"></div>
                       <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="gambar" class="img1">
                     </div>
-                    <h2 class="head-text">CS:GO Lorem ipsum dolor sit amer</h2>
+                    <h2 class="title">CSGO TEAM 5H00T3R OPEN</h2>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div class="date-ctg">
                       <p>24/11/2023 - Esports</p>
@@ -163,13 +420,19 @@
 
               <!-- ROW 2 -->
 
-              <div class="row col-md-12">
+              <div class="cards row col-md-12">
+
+                <!-- NEWS 4 -->
+
                 <div class="col-md-4">
-                  <div class="parallelogram">
+                  <div class="card-news">
+                    <div class="triangle-downleft"></div>
+                    <div class="triangle-upright"></div>
                     <div class="frame">
+                      <div class="triangle-downleft-img"></div>
                       <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="gambar" class="img1">
                     </div>
-                    <h2 class="head-text">CS:GO Lorem ipsum dolor sit amer</h2>
+                    <h2 class="title">CS:GO Lorem ipsum dolor sit amer</h2>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div class="date-ctg">
                       <p>26/11/2023 - Game Updates</p>
@@ -177,12 +440,17 @@
                   </div>
                 </div>
 
+                <!-- NEWS 5 -->
+
                 <div class="col-md-4">
-                  <div class="parallelogram">
+                  <div class="card-news">
+                    <div class="triangle-downleft"></div>
+                    <div class="triangle-upright"></div>
                     <div class="frame">
+                      <div class="triangle-downleft-img"></div>
                       <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="gambar" class="img1">
                     </div>
-                    <h2 class="head-text">CS:GO Lorem ipsum dolor sit amer</h2>
+                    <h2 class="title">CS:GO Lorem ipsum dolor sit amer</h2>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div class="date-ctg">
                       <p>26/11/2023 - Game Updates</p>
@@ -190,12 +458,17 @@
                   </div>
                 </div>
                 
+                <!-- NEWS 6 -->
+
                 <div class="col-md-4">
-                  <div class="parallelogram">
+                  <div class="card-news">
+                    <div class="triangle-downleft"></div>
+                    <div class="triangle-upright"></div>
                     <div class="frame">
+                      <div class="triangle-downleft-img"></div>
                       <img src="asset/img/Counter-Strike-Global-Offensive.jpg" alt="gambar" class="img1">
                     </div>
-                    <h2 class="head-text">CS:GO Lorem ipsum dolor sit amer</h2>
+                    <h2 class="title">CS:GO Lorem ipsum dolor sit amer</h2>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div class="date-ctg">
                       <p>26/11/2023 - Game Updates</p>
