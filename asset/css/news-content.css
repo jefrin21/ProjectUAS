@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Lobster&family=Open+Sans:wght@400;700&family=PT+Sans:ital,wght@1,700&display=swap');
+body{
+  font-family: 'Inter', sans-serif;
+}
+.news-head{
+  background-color: black;
+  padding-top: 1px;
+}
+
+.judul{
+  font-size: 60px;
+  font-weight: 900;
+  color: #ffc107;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.post-info{
+  color: white;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.divider{
+    border: 3px solid;
+    margin: 30px 0;
+    border-color: #ffc107;
+  }
+
+  .rec-divider{
+    border: 2px solid;
+    margin: 0 -10px;
+    margin-top: 10px;
+    border-color: #ffc107;
+  }
+
+.grid{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main-img{
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: auto;
+  size: 100%;
+}
+
+.paragraph{
+  color: white;
+  margin: 30px 15%;
+  text-align: justify;
+}
+
+.pointer{
+  margin: 25px 15%;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.point{
+  color: #ffc107;
+  background-color: transparent;
+  padding: 5px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.point:hover{
+  cursor: pointer;
+  background-color: #ffc107;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.disable-point{
+  opacity: 0.5;
+  color: #ffc107;
+  background-color: transparent;
+  padding: 5px 15px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+  
+a{
+  text-decoration: none;
+  color: inherit;
+}
+  
+.previous{
+  float: left;
+}
+
+.next{
+  float: right;
+}
+
+.content-right{
+  background-color: transparent;
+}
+
+.box{
+  color: #ffc107;
+  font-weight: 900;
+  font-size: 25px;
+  background-color: #212529;
+  margin: 0 20px;
+  margin-top: 20px;
+  border: 3px solid #ffc107;
+  padding: 10px;
+}
+
+.rec-img{
+  width: 337px;
+  margin: 0 -10px;
+}
+
+.rec-title{
+  margin-top: 5px;
+}
+
+.rec-text{
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  max-height: 45px;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.socmed{
+  width: 35px;
+  margin: 5px 6px;
+}
+
+.socmed:hover{
+  cursor: pointer;
+}
+
+.triangle-downleft-img{
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-top: 150px;
+  margin-left: -10px;
+  border-left: 0px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #212529;
+}
+
+.triangle-downleft-head{
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-top: -50px;
+  border-left: 0px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #ffc107;
+}
+
+.triangle-upright{
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: 310px;
+  margin-top: -10px;
+  border-left: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 40px solid #ffc107;
+}
+
+.rec-triangle-upright{
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: 310px;
+  margin-top: 0px;
+  border-left: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 40px solid #ffc107;
+}

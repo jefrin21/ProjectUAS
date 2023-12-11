@@ -6,221 +6,647 @@
     <title>CS:GO HUB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="asset/css/carousel.css">
   </head>
-  <body class="bg-dark"  >
+  <body class=" overflow-x-hidden "  >
 
-        <!-- Navbar -->
-       
+         
         
-            <div class="container fixed-top bg-dark p-2">
-              <div class="d-flex align-items-center justify-content-between gap-5 "> 
-              <a href="#">
-                <img src="asset/img/logo csgoo.png" alt="logo" class="image me-auto ">
-              </a>
+          <!-- Navbar --> 
+        <div class="container  fixed-top nav-set">
+                <div class="navbar navbar-expand-lg align-items-center justify-content-between gap-5 "> 
+                <a href="#">
+                  <img src="asset/img/logo csgoo.png" alt="logo" class="img-fluid image me-auto ">
+                </a>
 
-              <ul class="nav  ">
-                  <li class="nav-item ">
-                    <a class="nav-link text-white"  href="#">CS:GO Basic</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="tradeSkin.html">Trade Skin</a>
-                  </li>
-                  <li class="nav-item">   
-                    <a class="nav-link text-white" href="Product.html">Product</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white " href="csgoNews.html">CS:GO News</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link text-white " href="about.html">About</a>
-                    </li>
-                </ul>
-
-                <button class="btn btn-outline-warning border">
-                  LOGIN
+                <button
+                class="navbar-toggler bg-light "
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+                >
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-              </div>
-            </div>
-        
 
-        <!-- ISI -->   
+                <ul class="collapse navbar-collapse nav  justify-content-center flex-column flex-sm-row" id="navmenu">
+                    <li class="nav-item ">
+                      <a class="nav-link text-white txt-set"  href="#">CS:GO Basic</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white txt-set" href="tradeSkin.html">Trade Skin</a>
+                    </li>
+                    <li class="nav-item">   
+                      <a class="nav-link text-white txt-set" href="Product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white txt-set" href="csgoNews.html">CS:GO News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white txt-set" href="about.html">About</a>
+                      </li>
+                    
+                    <button class="button btn btn-outline-warning border ms-auto d-md-none mx-auto ">
+                        LOGIN
+                    </button>
+                      
+                  </ul>
+
+                  <button class="button btn btn-outline-warning border ms-auto d-none d-lg-block  ">
+                    LOGIN
+                  </button>
+                  
+                </div>
+        </div>
           
 
-        <!-- Tentang CS:GO -->
-        <section class="mt-5 pt-3" id="tentang">  
-          <div class="container d-flex   align-items-center">
-              <video 
-              src="asset/img/csgo.mp4" class=" w-50  pt-5" autoplay muted loop>
-              </video>
+           
+        <div id="header" class="video-set">
+            <div class=" background-video ">
+                <video autoplay muted loop
+                    src="asset/img/video/y2mate.com - CounterStrike 2  Launch Trailer_1080pFH.mp4" class="bg-light rounded video-set opacity-50" > 
+                </video>  
+            </div>
+        </div>
 
-              <div class="ms-5 ">
-                <h4 class="text-secondary">
-                  <span class="text-warning"> COUNTER-STRIKE</span> : <span class="text-warning"> GLOBAL OFFENSIVE 
-                </h4></span>
+        <!-- Header -->  
+        <section id="section1">
+          <div class="container header-position ">
+             
+                <span class="tag-line center-text animate__animated animate__backInDown">
+                  Raih Kemenangan, Sita Harapan. Di CS:GO, Taktik Menggema, Kemenangan Menjadi Nyata
+                </span>
 
-                <p class="text-light">
-                  permainan first-person shooter (FPS) yang dikembangkan oleh Valve Corporation dan Hidden Path Entertainment.
-                  CS:GO dirilis untuk pertama kalinya pada tahun 2012 dan sejak itu menjadi salah satu game FPS paling populer di dunia.
-                  CS:GO menawarkan berbagai mode permainan, termasuk Classic Casual dan Competitive, Arms Race, Demolition, dan Danger Zone (Battle Royale).
-                  Mode permainan Competitive melibatkan pembelian senjata dan peralatan dengan uang virtual yang diperoleh selama pertandingan.
-                </p>
+                <span class="set center-text text-center">
+                  <button class="btn btn-outline-warning but-set   animate__animated animate__backInLeft">
+                   <a href="https://store.steampowered.com/app/730/CounterStrike_2/">
+                    Download Sekarang <i class="bi bi-arrow-right-circle"></i> 
+                   </a>
+                  </button>
+                </span>
 
-                <button 
-                class="btn btn-outline-warning ">
-                 <a href="https://store.steampowered.com/app/730/CounterStrike_2/" class="text-decoration-none text-light "> Download Sekarang!</a> 
-                </button>
-              </div>
+            <p class="header-set center-text animate__animated animate__backInUp">
+                <span>
+                  COUNTER-STRIKE : GLOBAL OFFENSIVE <i class="bi bi-controller"></i>
+                </span>
+ 
+             </p>
           </div>
-        </section>
-
-        
-        <!-- Gambar maps CSGO --> 
-
-        <section id="maps" class="pt-5 ">
-          <div class="container d-flex align-items-center justify-content-between gap-5">
-
-            <div class="w-50">
-              <h4 class="text-secondary">
-                <span class="text-warning">CS:GO MAPS</span>
-              </h4></span>
-
-              <p class="text-light">
-                Counter-Strike: Global Offensive (CS:GO) adalah permainan tembak-menembak yang ikonik dengan peta-peta yang dirancang
-                dengan teliti untuk memberikan pengalaman permainan yang mendalam. Setiap peta dalam CS:GO memiliki karakteristik unik
-                dan memerlukan strategi yang cerdas dari para pemainnya. Dari Dust II yang legendaris hingga Mirage yang eksotis, setiap
-                peta menciptakan suasana yang berbeda dalam pertempuran antara Teroris dan Kontra-Teroris. Maps CS:GO tidak hanya
-                menjadi medan pertempuran, tetapi juga panggung untuk aksi kompetitif tingkat dunia, di mana para pemain bersaing untuk
-                mencapai kemenangan dan kejayaan.
-              </p>
-
+        </section>  
+      
+        <!-- About csgo -->
+        <section class="section2-background" id="section2"> <img src="asset/img/section2-background.png" alt="" class="img-fluid kelas opacity-50" style="width: 200vh; height: 55vh;">
+          <div class="container">
+            <div class="row section2-img">
+              <div class="col-lg-6 ">
+                <img src="asset/img/char-csgo.png" alt="#" class=" img-fluid img-section-set d-none d-lg-block">
+              </div>
+              <div class="col-lg-6 text-white section2-txt border">
+                <h1> <span class="csgo-txt"> CS:GO </span></h1>
+                <p class="section2-p">
+                  Counter-Strike: Global Offensive (CS:GO) menghadirkan ketegangan <br> dan 
+                  kecerdasan taktis dalam setiap tembakan. Dalam dunia di mana <br>setiap 
+                  detik berharga, para pemainnya menari
+                   di antara peluru dan <br> strategi. 
+                  Dengan senjata-senjata ikonik dan peta-peta penuh taktik, <br> CS:GO menjadi
+                   panggung di mana keterampilan, koordinasi tim, dan<br> kejelian mengambil peran utama. 
+                </p>
+              </div>
               
             </div>
-
-            <div id="carouselExampleCaptions" class="carousel slide w-50  ms-auto">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="slide 7"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="asset/img/inferno.jpg" class="d-block w-100" alt="maps inferno">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5 >INFERNO</h5>
-                    <p>Inferno, salah satu map ikonik dalam Counter-Strike: Global Offensive (CS:GO),
-                       menawarkan pengalaman pertempuran yang intens dan taktis.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="asset/img/ancient.jpeg" class="d-block w-100" alt="maps ancient">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>ANCIENT</h5>
-                    <p>Ancient, salah satu map terbaru dalam Counter-Strike: Global Offensive (CS:GO),
-                       membawa pemain ke setting yang menggabungkan elemen sejarah dan fiksi. </p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="asset/img/Anubis.jpg" class="d-block w-100" alt="maps anubis">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>ANUBIS</h5>
-                    <p>Anubis, salah satu map terbaru dalam Counter-Strike: Global Offensive (CS:GO),
-                       membawa pemain ke dunia mitos Mesir kuno.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="asset/img/mirage.jpg" class="d-block w-100" alt="maps mirage">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>MIRAGE</h5>
-                    <p>Mirage, salah satu map paling ikonik dalam Counter-Strike: Global Offensive (CS:GO),
-                       menyajikan pengalaman permainan yang dinamis dan intens.  </p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="asset/img/Nuke.jpg" class="d-block w-100" alt="maps nuke">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>NUKE</h5>
-                    <p>Nuke, salah satu map klasik dalam Counter-Strike: Global Offensive (CS:GO),
-                       menawarkan pengalaman permainan yang intens dan penuh tantangan.   </p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="asset/img/overpass.jpg" class="d-block w-100" alt="maps overpass">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>OVERPASS</h5>
-                    <p>Overpass, salah satu map dalam Counter-Strike: Global Offensive (CS:GO),
-                       menyajikan pengalaman permainan yang penuh variasi dan taktik.    </p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="asset/img/vertigo.jpg" class="d-block w-100" alt="maps vertigo">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>VERTIGO</h5>
-                    <p>Vertigo, salah satu map dalam Counter-Strike: Global Offensive (CS:GO),
-                       membawa pemain ke dalam lingkungan perkotaan yang modern dan tinggi.     </p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+            <button 
+                class="btn btn-outline-warning sec2-button text-white">
+                <a href="about.html">Selengkapnya <i class="bi bi-arrow-right-circle"></i></a>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-
           </div>
         </section>
 
+        <!-- Rank csgo -->
+        
+        <section class="section3-background" id="section3"> <img src="asset/img/section3-background.png" alt="" class="img-fluid rank-position opacity-50 mt-2" style="width: 200vh; height: 55vh;">
+          <div class="container ">
 
-        <!-- Items CS:GO -->
+            <h1 class="section3-txt sec3-moving"> <span><i class="bi bi-award"></i> CS:GO RANKS </span></h1>
+            <div class="section3-carousel">
 
-        <section id="itemscsgo " class="mt-5">
-          <div class="container">
+              <div class="section3-carousel-item ">
+                <div class="box-body">
+                  <h5 class="text-center border section3-txt-size text-light">SILVER</h5>
+                    <img src="asset/img/rank/rank-silver.png" alt="https://totalcsgo.com/ranks" class="img-fluid">
+                </div>
+              </div>
+    
+              <div class="section3-carousel-item">
+                <div class="box-body">
+                  <h5 class="text-center border section3-txt-size text-light">GOLD NOVA</h5>
+                    <img src="asset/img/rank/rank-nova.png" alt="https://totalcsgo.com/ranks" class="img-fluid">
+                </div>
+              </div>
 
-            <h4 class="text-warning text-center">ITEMS CS:GO</h4>
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link" href="#weapon">Active</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#weapon1">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
+              <div class="section3-carousel-item">
+                <div class="box-body">
+                  <h6 class="text-center border section3-txt-size text-light">MASTER GUARDIAN</h6>
+                    <img src="asset/img/rank/rank-master.png" alt="https://totalcsgo.com/ranks" class="img-fluid">        
+                </div>
+              </div>
+
+            </div>
+
+            <button 
+            class="btn btn-outline-warning text-light section3-button" >
+             <a href="rank.html">
+              Lainnya <i class="bi bi-arrow-right-circle"></i>
+             </a>
+            </button>
           </div>
+        </section>
+      
+       
 
+        
+        <!-- Maps -->
+        <section id="section4" >  
+          <div class=" container ">
+            <div class="w-100 bg-light carousel-set">
+              <h1 class="sec4-txt"><span class="section4-txt">CS:GO MAPS</span></h1>
+             <main>
+                <ul class='slider list-set '>
+                  <li class='item' style="background-image: url('../ProjectUAS/asset/img/ancient.jpeg')">
+                    <div class='content'>
+                      <h2 class='title'>"Ancient"</h2>
+                      <p class='description'> Di tengah reruntuhan kuno yang membentang luas,
+                         kisah masa lalu yang terlupakan terpahat dalam setiap pilar batu yang runtuh,
+                          menciptakan atmosfer yang membawa kita kembali ke era yang telah lama berlalu.  </p>
+                     
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url('../ProjectUAS/asset/img/Anubis.jpg')">
+                    <div class='content'>
+                      <h2 class='title'>"Anubis"</h2>
+                      <p class='description'> Dengan detail-desain yang mencengangkan,
+                         Anubis dalam CS:GO membawa pemainnya ke dalam perjalanan virtual melalui tanah kuno,
+                          menggabungkan unsur-unsur arsitektur sejarah dengan pengalaman permainan yang intens dan strategis.   </p>
+                     
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url('../ProjectUAS/asset/img/inferno.jpg')">
+                    <div class='content'>
+                      <h2 class='title'>"Inferno"</h2>
+                      <p class='description'> Dengan desain yang khas dan nuansa yang menyala-nyala,
+                         Inferno memunculkan pertempuran sengit antara Teroris dan Counter-Terrorists,
+                          dengan bombsite A yang berada di dekat gereja kuno dan bombsite B di pasar yang ramai.  </p>
+                     
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url('../ProjectUAS/asset/img/mirage.jpg')">
+                    <div class='content'>
+                      <h2 class='title'>"Mirage"</h2>
+                      <p class='description'>
+                        Dengan palet warna yang kaya dan detail-desain yang halus,Mirage membawa pemain ke dalam pengalaman permainan yang intens di tengah kota yang penuh nuansa dan menyajikan tantangan taktis yang unik di setiap putarannya.</p>
+                     
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url('../ProjectUAS/asset/img/Nuke.jpg')">
+                    <div class='content'>
+                      <h2 class='title'>"Nuke"</h2>
+                      <p class='description'>
+                        Desain vertikal Nuke menghadirkan tantangan unik,
+                         memperkenalkan area seperti bombsite A yang terletak di atas atap 
+                         dan bombsite B yang tersembunyi di dalam gedung, memaksa pemain untuk berpikir secara strategis
+                          tentang pergerakan dan serangan.
+                      </p>
+                     
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url('../ProjectUAS/asset/img/overpass.jpg')">
+                    <div class='content'>
+                      <h2 class='title'>"Overpass"</h2>
+                      <p class='description'> Dengan suasana yang mencerminkan kota metropolitan,
+                         Overpass membawa pemainnya ke dalam pengalaman permainan yang unik, 
+                         dengan pertempuran di antara gudang-gudang, ruang-ruang terbuka
+                          dan area-area yang menantang untuk dikuasai.  </p>
+                     
+                    </div>
+                  </li>
+                  <li class='item' style="background-image: url('../ProjectUAS/asset/img/vertigo.jpg')">
+                    <div class='content'>
+                      <h2 class='title'>"Vertigo"</h2>
+                      <p class='description'> Dengan suasana urban yang menggambarkan konstruksi gedung pencakar langit,
+                         Vertigo memberikan pengalaman permainan yang unik di antara struktur bangunan yang sedang dibangun,
+                          dengan jalan-jalan sempit dan pergeseran vertikal yang menghadirkan tantangan taktis yang berbeda.  </p>
+                     
+                    </div>
+                  </li>
+                </ul>
+                <nav class='nav-carousel'>
+                  <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+                  <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+                </nav>
+          </main>
+        </div>
+          </div>
+        </section>
+
+            
+        <!-- Item -->
+        <section id="section5" class="section5-set bg ">
+          <div class="container">
+            <div class="text-center pt-5 mt-5">
+              <h4 class="text-secondary">
+                <span class="section5-txt">CS:GO ITEMS</span>
+              </h4></span>
+            
+            <div class="row mt-5 justify-content-center  ">
+              <div class="col-md-6">
+                <div class="list-group list-group-horizontal-lg gap-lg-5 gap-1 w-lg-100 " id="list-tab" role="tablist">
+                  <a class="list-group-item list-group-item-action active bg-warning text-dark section5-menu rounded" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Pistols</a>
+                  <a class="list-group-item list-group-item-action bg-warning text-dark section5-menu rounded" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Mid-Tier</a>
+                  <a class="list-group-item list-group-item-action bg-warning text-dark section5-menu rounded" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Rifles</a>
+                  <a class="list-group-item list-group-item-action bg-warning text-dark section5-menu rounded" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Knives</a>
+                </div>
+              </div>
+            <div >
+              <div class="col-md-12" >
+                <div class="tab-content" id="nav-tabContent">
+                  <!-- items pistols -->
+                  <div class="tab-pane fade show active " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+
+                    <div class="d-flex flex-wrap justify-content-center mt-5 pt-5 mx-3 scroollbar-section5" style="max-height:400px; overflow-y: scroll; ">
+                      <div class="col-lg-3  mb-3  ">
+                        <div class="card cardzi" style="width: 18rem; ">
+                          <img src="asset/img/pistols/cz-removebg-preview.png" class="p-3 card-img-top imgsize ms-5 pt-5 " alt="https://w7.pngwing.com/pngs/619/666/png-transparent-counter-strike-global-offensive-cz-75-trigger-cz75-auto-weapon-weapon-video-game-assault-rifle-airsoft.png">
+                          <div class="card-body">
+                            <h5 class="card-title">CZ75-AUTO</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3" >
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/pistols/usp-removebg-preview.png" class="  ms-5 ps-3  pt-5 card-img-top imgsize" alt="https://www.dlf.pt/dfpng/middlepng/311-3111535_nova-cs-go-png-transparent-png.png...">
+                          <div class="card-body">
+                            <h5 class="card-title mt-3">USP-S</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3 "> 
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/pistols/glock-removebg-preview.png" class=" ms-5 ps-5 mt-5 card-img-top imgsize" alt="https://tse2.mm.bing.net/th?id=OIP.zykKgh_toZPOknHtDUbB5wHaDS&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-3">GLOCK-18</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/pistols/desert_eagle-removebg-preview.png" class="ms-5 ps-5 pt-5 mt-3 card-img-top imgsize" alt="https://image.pngaaa.com/496/1190496-middle.png" >
+                          <div class="card-body">
+                            <h5 class="card-title">DESERT EAGLE</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/pistols/dual_baretas-removebg-preview.png" class="ps-3  pt-5  sizeimg card-img-top imgsize" alt="https://tse1.mm.bing.net/th?id=OIP.f1P4w9BgiFcPQ_cS7ZmaTQHaDe&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title">DUAL BARETAS</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/pistols/five_seven-removebg-preview.png" class="ps-5 ms-5  pt-5  mt-5  imgsize" alt="https://tse2.mm.bing.net/th?id=OIP.AyRs-vgA8dmNL1Zwo5UjVwHaD_&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-3">FIVE SEVEN</h5>
+                            </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/pistols/r8-resolves-removebg-preview.png" class="ms-5 ps-5 pt-4 mt-5 card-img-top imgsize" alt="https://tse2.mm.bing.net/th?id=OIP.oRkHYkHfx3YI7_2zxl6IMQHaFj&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-3">R8 RESOLVES</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/pistols/tec-9-removebg-preview.png" class="ms-5 ps-5 pt-5 mt-4 card-img-top imgsize" alt="https://tse2.mm.bing.net/th?id=OIP.QzRAceazWopKUSGlrCgAWwHaFt&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title">TEC-9</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- Items MID-tier -->
+                  <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                    <div class="d-flex flex-wrap justify-content-center mt-5 pt-5 mx-3 " style="max-height:400px; overflow-y: scroll;">
+
+                      <div class="col-lg-3  mb-3 ">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/mid-tier/mac-10-removebg-preview.png" class="p-3 card-img-top imgsize ms-5 pt-3 " alt="https://tse4.mm.bing.net/th?id=OIP.A0GcWGql55e-kAhtrcgXVgHaGr&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title">MAC-10</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/mid-tier/nova-removebg-preview.png" class="sizeimg p-3 ms-2 pt-5 card-img-top imgsize" alt="https://www.dlf.pt/dfpng/middlepng/311-3111535_nova-cs-go-png-transparent-png.png...">
+                          <div class="card-body">
+                            <h5 class="card-title">NOVA</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3 "> 
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/mid-tier/p90-removebg-preview.png" class=" ms-5 ps-5 mt-5 card-img-top imgsize" alt="https://tse2.mm.bing.net/th?id=OIP.zykKgh_toZPOknHtDUbB5wHaDS&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-3">P90</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/mid-tier/mp5-removebg-preview.png" class="ms-5 ps-5 pt-5 mt-3 card-img-top imgsize" alt="https://tse1.mm.bing.net/th?id=OIP.YfFbwJUjwQtjHs8B_X1aXQHaDK&pid=Api&P=0&h=180" >
+                          <div class="card-body">
+                            <h5 class="card-title">MP5</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/mid-tier/mp9-removebg-preview.png" class=" mt-5 ms-5 ps-5  pt-5  sizemid card-img-top imgsize" alt="https://tse4.mm.bing.net/th?id=OIP.13z1zyrnkxtWhTmCCZNBzAHaDp&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title">MP9</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/mid-tier/pp_bizon-removebg-preview.png" class="ps-5 ms-5   mt-5  imgsize" alt="https://tse2.mm.bing.net/th?id=OIP.K6BprJ5ofmu6DLol0DsTeAAAAA&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title ">PP-BIZON</h5>
+                            </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/mid-tier/ump-45-removebg-preview.png" class="ms-5 ps-5 pt-4 mt-5 card-img-top imgsize" alt="https://tse2.mm.bing.net/th?id=OIP.LuCLXVYSfUrhNxDSjRwOsgHaFj&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title ">UMP-45</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/mid-tier/mag7-removebg-preview.png" class="ms-5 ps-5 pt-5 mt-4 card-img-top imgsize" alt="https://tse1.mm.bing.net/th?id=OIP.B79pN_FArBuEYAbD9r4J-wHaFj&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title">MAG-7</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <!-- items Rifles -->
+                  <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                    <div class="d-flex flex-wrap justify-content-center mt-5 pt-5 mx-3 " style="max-height:400px; overflow-y: scroll;">
+
+                      <div class="col-lg-3  mb-3 ">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/rifles/ak-47-removebg-preview.png" class="p-3 card-img-top   pt-5 mt-3 " alt="https://tse4.mm.bing.net/th?id=OIP.c1sQ3Wt6QM5KVH-9EM51MQHaCW&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title">AK-47</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/rifles/aug-removebg-preview.png" class="  ms-2 card-img-top " alt="https://tse4.mm.bing.net/th?id=OIP.VOyAbTq0OIPIUyc0AKjwBAHaEK&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title">AUG</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3 "> 
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/rifles/awp-removebg-preview.png" class=" pt-3  mt-5 card-img-top " alt="https://tse1.mm.bing.net/th?id=OIP.6veMTwmAnQZF5DE6lmfH5wHaBZ&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-3">AWP</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/rifles/famas-removebg-preview.png" class="ms-5 sizemid ps-5 pt-3 mt-3 card-img-top imgsize" alt="https://tse4.mm.bing.net/th?id=OIP._ftj7V5WHrxJRP9CrxKjaAHaHk&pid=Api&P=0&h=180" >
+                          <div class="card-body">
+                            <h5 class="card-title">FAMAS</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/rifles/galil_ar-removebg-preview.png" class=" mt-5 pt-4   card-img-top " alt="https://tse4.mm.bing.net/th?id=OIP.NlDCrEiGeDHqWwlRxI20QgHaCb&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-5">GALIL AR</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/rifles/m4a1-s-removebg-preview.png" class="mt-5  card-img-top" alt="https://tse3.mm.bing.net/th?id=OIP.HkmkSjoUtW-gWmSssAz6WgHaEK&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title ">M4A1-S</h5>
+                            </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/rifles/M4A4-removebg-preview.png" class=" pt-4 mt-5 card-img-top " alt="https://tse2.mm.bing.net/th?id=OIP.LuCLXVYSfUrhNxDSjRwOsgHaFj&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-5 ">M4A4</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/rifles/ssg-08-removebg-preview (1).png" class="pt-5  card-img-top " alt="https://tse1.mm.bing.net/th?id=OIP.pQ7FoRvKmNbSSVGI5ekjjQHaEc&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title">SSG-08</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <!-- items knives -->
+                  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                    <div class="d-flex flex-wrap justify-content-center mt-5 pt-5 mx-3 " style="max-height:400px; overflow-y: scroll;">
+
+                      <div class="col-lg-3  mb-3 ">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/knives/bayonet-removebg-preview.png" class=" card-img-top sizemid ms-5 ps-3  pt-5" alt="https://tse1.mm.bing.net/th?id=OIP.gda5c02CsO6L81d4ADdIbgHaIW&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title">BAYONET</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/knives/bowie_knife-removebg-preview.png" class="  ms-5 ps-3 pt-5 card-img-top sizemid " alt="https://tse3.explicit.bing.net/th?id=OIP.jVaDt9uxP-s7wwrFukBBsgHaF3&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-5">BOWIE KNIFE</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3 "> 
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/knives/butterfly_knife-removebg-preview.png" class=" pt-3 ms-5 ps-4 sizemid mt-5 card-img-top " alt="https://tse1.mm.bing.net/th?id=OIP.N1QBGgLkNjLJe12uGEwotgHaD0&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-5 pt-4">BUTTERFLY KNIFE</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi" style="width: 18rem;">
+                          <img src="asset/img/knives/gut_knife-removebg-preview.png" class="ms-5 sizemid ps-5 pt-5 mt-5 card-img-top " alt="https://tse2.mm.bing.net/th?id=OIP.F2riBlxEw2-CPPevTI9aGAHaD7&pid=Api&P=0&h=180" >
+                          <div class="card-body">
+                            <h5 class="card-title mt-5 ">GUT KNIFE</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi " style="width: 18rem;">
+                          <img src="asset/img/knives/talon_knife-removebg-preview.png" class=" mt-5 ms-5 sizemid card-img-top " alt="https://tse4.mm.bing.net/th?id=OIP.8OjVuxZM7QaRzGCJMgPBfgHaHa&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title ">TALON KNIFE</h5>
+                          </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi " style="width: 18rem;">
+                          <img src="asset/img/knives/shadow_danggers-removebg-preview.png" class="mt-5 ms-5 sizemid card-img-top" alt="https://tse3.mm.bing.net/th?id=OIP.UcJTbJeJcvcmNO-CELoIhQHaFj&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-4 pt-3 ">SHADOW DANGGERS</h5>
+                            </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi " style="width: 18rem;">
+                          <img src="asset/img/knives/ursus_knife-removebg-preview.png" class="mt-5 ms-5 ps-2 sizemid card-img-top" alt="https://tse3.mm.bing.net/th?id=OIP.T9QlAadjynDOuUbMRbUCOwHaEO&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-5 pt-4">URSUS KNIFE</h5>
+                            </div>
+                        </div>  
+                      </div>
+
+                      <div class="col-lg-3 mb-3">
+                        <div class="card cardzi " style="width: 18rem;">
+                          <img src="asset/img/knives/skeleton-removebg-preview.png" class="mt-5 ms-5 ps-3 sizemid card-img-top" alt="https://tse1.mm.bing.net/th?id=OIP.6fCcMhPxO9TfyEBvd31k-QAAAA&pid=Api&P=0&h=180">
+                          <div class="card-body">
+                            <h5 class="card-title mt-5 ">SKLETON</h5>
+                            </div>
+                        </div>  
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+          <div class="element-section5 d-none d-lg-block">
+            <img src="asset/img/back-section5-items.png" class="img1-section5" alt="">
+            <img src="asset/img/back-section5-items2.png" class="img2-section5" alt="">
+          </div>
         </section>
 
         
 
-           
+          <!-- Footer -->
 
-        <!-- Footer
+          <section id="footer">
+              <div class=" footer-set w-100" >
+                <div class="row text-dark text-center">
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <img src="asset/img/logo csgoo.png" alt="" class="img-fluid w-50 align-items-center mt-4 "> 
+                    <img src="asset/img/steam-logo.png" alt="" class="img-fluid w-50 align-items-center">
+                  </div>
+                  <div class="col-lg-4 mt-lg-5 text-light"><h4>Tentang Kami</h4>
+                    <p class=" footer-text text-center">
+                        <ul >
+                          <li class="footer-info"><a href="about.html">Informasi Seputar CS:GO</a></li>
+                          <li class="footer-info"><a href="#section4">CS:GOMaps CS:GO</a></li>
+                          <li class="footer-info"><a href="Product.html">Bebagai Items di CS:GO</a></li>
 
-        <section id="footer">
-            <div >
-                <footer class="footer mt-auto py-3 bg-secondary">
-                    <div class="container text-center ">
-                      <span class=" text-white">© 2023 CS:GO HUB</span>
+                        </ul>
+                    </p>
+                  </div>
+                  <div class="col-lg-4 mt-lg-5 text-light "><h4>Ikuti Kami</h4>
+                    <p>
+                      <ul class="d-flex p-5  gap-5 text-center ms-5" >
+                        <li ><a href="https://www.instagram.com/leomessi/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-instagram p-2 border-footer"></i>Instagram</a></li>
+                        <li><a href="https://www.instagram.com/hmpssi_uph/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-facebook p-2 border-footer"></i>Facebook</a></li>
+                        <li><a href="https://www.youtube.com/@hmpssisteminformasiuph5584"><i class="bi bi-twitter p-2 border-footer"></i>Twitter</a></li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+
+                  <div class="py-3 bg-secondary footer-txt-set w-100">
+                      <div class="text-center ">
+                        <span class=" text-light">© 2023 CS:GO HUB. Hak Cipta Dilindungi</span>
+                      </div>
                     </div>
-                  </footer>
-            </div>
-        </section>
-         -->
+              </div>
+          </section>
+         
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script type="text/javascript" src="asset/js/carousel.js"></script>
+      
+
 </body>
 </html>
