@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "../ProjectUAS/asset/img/TradeSkin/type/Knives/flipk-nife-doppler-sapphire.webp",
       alt: "Classified",
       text: "$ 615.52",
-      link: "",
+      link: "#flip-doppler-sapphire.html",
     },
     {
       imageSrc:
@@ -851,7 +851,6 @@ document.addEventListener("DOMContentLoaded", function () {
     cardElement.style.fontWeight = "bold";
 
     const cardButton = document.createElement("a");
-    cardButton.href = "#";
     cardButton.className = "btn btn-warning";
     cardButton.textContent = "🛒Trade🛒";
     cardButton.style.backgroundColor = "#ffcc00"; // Set the button background color

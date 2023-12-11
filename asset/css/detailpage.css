@@ -50,6 +50,8 @@ body {
   position: relative;
 }
 
+
+
 .tampilan-skin {
   display: grid;
   grid-template-columns: 958px 370px;
@@ -927,9 +929,10 @@ body {
 }
 
 .footer-set{
-  position: absolute;
+  position: relative;
   z-index: 1;
-  margin-top: 70px;
+  margin-top: 10%px;
+  height: 50%;
   background-color : #1b1b1b ;
 
 }
@@ -944,3 +947,44 @@ list-style-type: none;
 color: white;
 }
 
+
+
+#footer a{
+text-decoration: none;
+color: white;
+}
+
+#footer .border-footer{
+background-color: #fff;
+box-shadow: 5px 5px 10px #fff;
+border: none;
+}
+
+#footer .footer-info:hover{
+background-color: #b9b9b9;
+font-size: 20px;
+border-radius: 20px;
+}
+
+#footer .border-footer:hover{
+width: 20px;
+background-color: #b9b9b9;
+}
+
+#footer .bi-instagram{
+color: #E4405F;
+font-size: 1em;
+border-radius: 10px;
+}
+
+#footer .bi-facebook{
+color: #1877F2;
+font-size: 1em;
+border-radius: 10px;
+}
+
+#footer .bi-twitter{
+color: #1DA1F2;
+font-size:1em;
+border-radius: 10px;
+}
