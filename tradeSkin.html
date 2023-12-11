@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CS:GO HUB</title>
-    <link rel="stylesheet" type="text/css" href="./asset/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./asset/css/tradeskin.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,6 +21,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+  />
     <style>
       #cardContainer {
         display: flex;
@@ -47,7 +51,7 @@
         margin-top: 25px;
       }
       ::-webkit-scrollbar-thumb {
-        background: linear-gradient(#642bff, #ff22e6);
+        background: linear-gradient(45deg, #ffd700, #ffffff);
         border-radius: 10px;
       }
     </style>
@@ -57,6 +61,7 @@
         word-wrap: break-word;
         background: #1c1a24; /* Warna yang diinginkan */
         position: relative;
+        overflow-x: hidden;
       }
     </style>
   </head>
@@ -93,7 +98,7 @@
           <div class="col-5">
             <div class="d-flex flex-column">
               <button
-                class="btn btn-primary w-100 mb-3 bagiankiri"
+                class="btn btn-warning w-100 mb-3 bagiankiri"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne"
@@ -127,24 +132,44 @@
           </div>
           <div class="col-2">
             <div class="d-flex flex-column align-items-start">
-              <div class="btn btn-primary w-100 mb-3">Trade</div>
+              <a href="#popUp" id="openPopUp">TRADE</a>
+  
+              <!-- POP UP -->
+              <aside id="popUp" class="popup">
+                  <div class="popUpContainer">
+                     <header>
+                      <a href="#!" class="closePopUp">X</a>
+                      <h2>TRADE</h2>
+                     </header>
+                    <article>
+                      <div class="tampilan-isi-popup">
+                        <div class="slot-kiri"></div>
+                        <div class="slot-kanan"></div>
+                        <div class="Trade"></div>
+                        <div class="no-trade"></div>
+                      </div>
+                    </article>
+                 </div>        
+                 <a href="#!" class="closePopUpOutSide"></a>    
+              </aside>
+              <br>
               <div class="dropdown">
                 <div class="select">
-                  <span class="selected">Type</span>
+                  <span class="selected" id="typeDropdown">Type</span>
                   <div class="caret"></div>
                 </div>
                 <ul class="menu">
-                  <li>Pistols</li>
-                  <li>Mid-tier</li>
-                  <li>Sniper Rifles</li>
-                  <li>Assault Rifles</li>
-                  <li>Knives</li>
-                  <li>gloves</li>
+                  <li class="filter-box pistols">Pistols</li>
+                  <li class="filter-box mid-tier">Mid-tier</li>
+                  <li class="filter-box sniper">Sniper Rifles</li>
+                  <li class="filter-box assault-rifles">Assault Rifles</li>
+                  <li class="filter-box knives">Knives</li>
+                  <li class="filter-box gloves">gloves</li>
                 </ul>
               </div>
               <div class="dropdown">
                 <div class="select">
-                  <span class="selected">Rarity</span>
+                  <span class="selected" id="rarityDropdown">Rarity</span>
                   <div class="caret"></div>
                 </div>
                 <ul class="menu">
@@ -161,7 +186,7 @@
           <div class="col-5">
             <div class="d-flex flex-column align-items-start">
               <button
-                class="btn btn-primary w-100 mb-3 bagiankanan"
+                class="btn btn-warning w-100 mb-3 bagiankanan"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne"
@@ -197,16 +222,42 @@
       </div>
     </section>
 
-    <!-- Footer -->
+       <!-- Footer -->
 
-    <section id="footer">
-      <div>
-        <footer class="footer mt-auto py-3 bg-secondary">
-          <div class="container text-center">
-            <span class="text-white">© 2023 CS:GO HUB</span>
+       <section id="footer">
+        <div class=" footer-set w-100" >
+          <div class="row text-dark text-center">
+            <div class="col-lg-4 d-none d-lg-block">
+              <img src="asset/img/logo csgoo.png" alt="" class="img-fluid w-50 align-items-center mt-4 "> 
+              <img src="asset/img/steam-logo.png" alt="" class="img-fluid w-50 align-items-center">
+            </div>
+            <div class="col-lg-4 mt-lg-5 text-light"><h4>Tentang Kami</h4>
+              <p class=" footer-text text-center">
+                  <ul >
+                    <li class="footer-info"><a href="#section2">Informasi Seputar CS:GO</a></li>
+                    <li class="footer-info"><a href="#section4">CS:GOMaps CS:GO</a></li>
+                    <li class="footer-info"><a href="#section5">Bebagai Items di CS:GO</a></li>
+  
+                  </ul>
+              </p>
+            </div>
+            <div class="col-lg-4 mt-lg-5 text-light "><h4>Ikuti Kami</h4>
+              <p>
+                <ul class="d-flex p-5  gap-5 text-center ms-5" >
+                  <li ><a href="https://www.instagram.com/leomessi/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-instagram p-2 border-footer"></i>Instagram</a></li>
+                  <li><a href="https://www.instagram.com/hmpssi_uph/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-facebook p-2 border-footer"></i>Facebook</a></li>
+                  <li><a href="https://www.youtube.com/@hmpssisteminformasiuph5584"><i class="bi bi-twitter p-2 border-footer"></i>Twitter</a></li>
+                </ul>
+              </p>
+            </div>
           </div>
-        </footer>
-      </div>
+  
+            <div class="py-3 bg-secondary footer-txt-set w-100">
+                <div class="text-center ">
+                  <span class=" text-light">© 2023 CS:GO HUB. Hak Cipta Dilindungi</span>
+                </div>
+              </div>
+        </div>
     </section>
 
     <script
@@ -237,6 +288,6 @@
       });
     </script>
 
-    <script src="./asset/js/script.js"></script>
+    <script src="../ProjectUAS/asset/js/tradeskin.js"></script>
   </body>
 </html>

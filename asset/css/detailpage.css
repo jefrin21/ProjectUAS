@@ -201,13 +201,55 @@ body {
   white-space: nowrap;
   font-family: Inter, system-ui;
   position: relative;
-  color: #ff0000; /* Warna dasar neon merah */
   background: linear-gradient(90deg, #ff0000, #ff7300, #ff0000); /* Warna latar belakang gradient untuk efek neon */
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent; /* Membuat teks menjadi transparan */
   animation: neonGlow 1s linear infinite; /* Animasi warna neon */
 }
+
+.title-module-1 {
+  font-size: 32px;
+  font-weight: 700;
+  white-space: nowrap;
+  font-family: Inter, system-ui;
+  position: relative;
+
+  background: linear-gradient(90deg, #d32ce6, #8a2be2, #d32ce6); /* Warna latar belakang gradient untuk efek neon */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Membuat teks menjadi transparan */
+  animation: neonGlow1 1s linear infinite; /* Animasi warna neon */
+}
+
+.title-module-1 {
+  font-size: var(--frontly-subhead-lg-font-size);
+  font-weight: var(--frontly-subhead-lg-font-weight);
+  line-height: var(--frontly-subhead-lg-line-height);
+  letter-spacing: var(--frontly-subhead-lg-letter-spacing);
+}
+
+.title-module-2 {
+  font-size: 32px;
+  font-weight: 700;
+  white-space: nowrap;
+  font-family: Inter, system-ui;
+  position: relative;
+
+  background: linear-gradient(90deg, #8847FF, #8847FF, #8847FF); /* Warna latar belakang gradient untuk efek neon */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Membuat teks menjadi transparan */
+  animation: neonGlow1 1s linear infinite; /* Animasi warna neon */
+}
+
+.title-module-2 {
+  font-size: var(--frontly-subhead-lg-font-size);
+  font-weight: var(--frontly-subhead-lg-font-weight);
+  line-height: var(--frontly-subhead-lg-line-height);
+  letter-spacing: var(--frontly-subhead-lg-letter-spacing);
+}
+
 
 @keyframes neonGlow {
   0%, 100% {
@@ -218,6 +260,23 @@ body {
   }
 }
 
+@keyframes neonGlow1 {
+  0%, 100% {
+    text-shadow: 0 0 10px #d32ce6, 0 0 20px #8a2be2, 0 0 30px #d32ce6; /* Efek bayangan */
+  }
+  50% {
+    text-shadow: none; /* Hapus efek bayangan pada tengah animasi */
+  }
+}
+
+@keyframes neonGlow1 {
+  0%, 100% {
+    text-shadow: 0 0 10px #8847FF, 0 0 20px #8847FF, 0 0 30px #8847FF; /* Efek bayangan */
+  }
+  50% {
+    text-shadow: none; /* Hapus efek bayangan pada tengah animasi */
+  }
+}
 
 .title-skins span {
   color: #fff;
@@ -280,7 +339,6 @@ body {
   font-weight: var(--frontly-subhead-lg-font-weight);
   line-height: var(--frontly-subhead-lg-line-height);
   letter-spacing: var(--frontly-subhead-lg-letter-spacing);
-  color: #f26767;
 }
 .side-both {
   grid-area: side-both;
@@ -422,11 +480,11 @@ body {
 
 .image-preview {
   filter: drop-shadow(4px 12px 16px rgba(0,0,0,.25));
-  max-width: 70%;
+  max-width: 75%;
   height: 50%;
   object-fit: contain;
   justify-content: space-evenly;
-  padding-left: 120px;
+  padding-left: 130px;
 }
 
 #fotoSkin {
@@ -566,12 +624,16 @@ body {
   letter-spacing: .3px;
   cursor: pointer;
   user-select: none;
-  padding-bottom: 100%;
   position: relative;
-  border-radius: 4px;
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.good-item-1:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
 }
 
 .good-card-img{
@@ -583,6 +645,8 @@ body {
   transform: translate(-50%,-50%);
   background: 50%/contain no-repeat;
   margin-top: -35px;
+  transform: translate(-50%,-50%) scale(1); /* Menambahkan scale 1 agar tidak terpengaruh oleh transform di parent */
+  
 }
 
 .good-card-bottom {
@@ -622,6 +686,12 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.good-item-2:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
 }
 
 .user-price {
@@ -647,8 +717,13 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
 }
 
+.good-item-3:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
+}
 
 .good-item-4 { 
   grid-area: good-item-4; 
@@ -663,6 +738,12 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.good-item-4:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
 }
 
 .good-item-5 { 
@@ -678,6 +759,12 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.good-item-5:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
 }
 
 .good-item-6 { 
@@ -693,6 +780,12 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.good-item-6:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
 }
 
 .good-item-7 { 
@@ -708,6 +801,12 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.good-item-7:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
 }
 
 .good-item-8 { 
@@ -723,6 +822,12 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.good-item-8:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
 }
 
 .good-item-9 { 
@@ -738,6 +843,12 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.good-item-9:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
 }
 
 .good-item-10 { 
@@ -753,7 +864,14 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
 }
+
+.good-item-10:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
+}
+
 
 .good-item-11 { 
   grid-area: good-item-11; 
@@ -768,7 +886,14 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
 }
+
+.good-item-11:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
+}
+
 
 .good-item-12 { 
   grid-area: good-item-12; 
@@ -783,7 +908,14 @@ body {
   overflow: hidden;
   border: 1px solid transparent;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: transform 0.3s, background-color 0.3s;
 }
+
+.good-item-12:hover {
+  transform: scale(1.05); /* Memperbesar elemen saat dihover */
+  background-color: var(--color-graybase-800); /* Perubahan warna saat dihover */
+}
+
 
 .good-card-rarity {
   position: absolute;
@@ -793,3 +925,22 @@ body {
   border-left: 12px solid transparent;
   display: inline-block;
 }
+
+.footer-set{
+  position: absolute;
+  z-index: 1;
+  margin-top: 70px;
+  background-color : #1b1b1b ;
+
+}
+
+
+.footer-txt-set{
+  position: absolute;
+}
+
+#footer ul{
+list-style-type: none;
+color: white;
+}
+
